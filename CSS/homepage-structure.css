@@ -1,0 +1,93 @@
+
+* {box-sizing: border-box;}
+
+
+.wrapper {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template:
+      "header header"
+      "sidebar main"
+      "footer footer"
+      / 1fr;
+  }
+  
+  header { grid-area: header; }
+  aside { grid-area: sidebar; }
+  main { grid-area: main; }
+  footer { grid-area: footer; }
+
+
+  .header {
+    text-align: center;
+    margin: 0;
+}
+
+    main {
+    border: 2px solid red;
+    }
+
+    .left-sidebar {
+        display: inline-flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+  #info {
+    padding: 1rem;
+    max-width: 75%;
+  }
+  #webmistress {
+    padding: 1rem;
+  }
+    nav {
+        display: inline-block;
+        width: 12rem;
+        height: 25rem;
+        padding: 1rem;
+        text-align: center;
+        overflow: scroll;
+      
+    }   
+        .navlink {
+            display: block;
+            font-size: 1rem;
+        }
+
+    #sitely {
+        display: inline-block;
+        height:11rem;
+        width: 24rem;
+        overflow: scroll;
+        padding: 1rem;
+    }
+            #latest {
+                padding: 6px;
+            }
+
+    #webrings {
+        height: 16rem;
+        overflow: scroll;
+        width: 16rem;
+        padding: 1rem;
+        align-content: space-around;
+    }
+
+    #fanlists {
+        width: 18rem;
+        height: 22rem;
+        overflow: scroll;
+        padding: .7rem;
+    }
+@media (max-width: 800px) {
+    .wrapper {
+        grid-template:
+        "header"
+        "main"
+        "sidebar"
+        "footer"
+        / 1fr;
+    }
+}

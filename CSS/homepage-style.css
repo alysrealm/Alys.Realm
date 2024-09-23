@@ -1,0 +1,198 @@
+
+body {
+    background-image: url(/IMGs/bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+h3 {
+    font-family: 'Spirit';
+    color: #f3e2ff;
+    background-color: #201627;
+    border-radius: 1rem;
+    padding: 5px;
+}
+ 
+#greetings {
+    font-size: .89rem;
+    color:  #210968;
+    text-shadow: -1px 1px 2px rgb(108, 122, 249),
+                1px 1px 4px rgb(168, 114, 248);
+    font-weight: 500;
+}
+
+#outer {
+    background-color: #b9fce192 ;
+}
+.navlink {
+    font-family: 'DS';
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-shadow: 1px 0px #340d8e,
+                -1px 0px #340d8e,
+                0px 1px #340d8e,
+                0px -1px #340d8e;
+    padding: .3rem;
+    font-style: italic;
+    color: #e491ba; 
+}
+
+li {
+    list-style: url('/IMAGES/whitestar.gif');
+}
+
+#button {
+    background-color: #201627;
+    color: #f3a3cc;
+    border-radius: 10px;
+    margin: auto;
+    width: 9rem;
+    height: 9rem;
+    text-align: center;
+}
+#button img {
+    margin: 1rem;
+}
+
+.box1 {
+    border: 2px solid rgb(127, 75, 211);
+    border-radius: 5px;
+    background-color: #e6a6f0cd;
+}
+
+#sitely {
+    font-size: .7rem;
+    & h5 {
+        font-size: 1rem;
+    }
+}
+
+#sitely p:first-of-type {
+    background-color: rgb(87, 33, 87);
+    border: 2px solid rgb(116, 40, 116);
+    color: rgb(242, 198, 251);
+    border-radius: 1rem;
+    padding: 4px;
+}
+/* STATUS CAFE */
+
+    #statuscafe {
+        background: rgb(238,221,250);
+        border-radius: 10px;
+    }
+    #statuscafe-username {
+        font-family: 'PixelPoiz';
+        font-size: .9rem;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.711);
+        & a {
+            color: #c306b0;
+        }
+    }
+    #statuscafe-content {
+        margin: 0 0.8em 0.5em 0.8em;
+        font-size: .7rem;
+    }
+     /*statuscafe*/
+     #statuscafe {
+        padding: .5em;
+        margin: .5em;
+        border-radius: 10px;
+    }
+    #statuscafe-username {
+        margin-bottom: .5em;
+    }
+    #statuscafe-content {
+        margin: 0 0.8em 0.5em 0.8em;
+        font-weight: 600;
+    }
+
+/*****/
+.textcliq {
+    display: block;
+    margin: 2px 0;
+    text-align: center;
+    object-fit: contain;
+    width: 100%;
+}
+
+#cbox {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+/*CURRENTLY SECTION*/
+    #currently {
+        border-radius: 1rem;
+        font-size: .75rem;
+    }
+    #currently span {
+        font-weight: bold;
+    }
+    
+/*****/
+
+
+
+footer {
+    font-family: 'MS Gothic';
+    text-shadow: 1px 0px #451dab, -1px 0px #451dab, 0px 1px #451dab, 0px -1px #451dab, 0 0 1rem white;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: .9rem;
+}
+
+footer a {
+    color: #98f8d8;
+}
+#imood {
+    text-align: center;
+    display: block;
+    margin: .2rem auto;
+    font-family: 'NugieRomantic';
+    font-size: 1rem;
+}
+#stats {
+    padding: 1rem;
+    align-items: center;
+    height: 8rem;
+}
+
+
+    /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8054c9 #f9c5fc;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #f9c5fc;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #8054c9;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+  
+  ::-moz-selection { /* Code for Firefox */
+    color: rgb(255, 77, 202);
+    background: rgb(165, 255, 145);
+    }
+
+    ::selection {
+        color: rgb(255, 77, 202);
+        background: rgb(165, 255, 145);
+    }
+    .broider {
+        border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAABXElEQVRYR+2ZawrCMBCE7dEE8dAieDRFMaWsDN8kTWKC+i+22UxmZyePLqfj5X7Y/K638/Jsxv/TK+n5tk+L9+P4y3RAI5PUjgynCbfqtzJKAyhJ9Or30uNWY+7Aqp/SbtS2m4HUbx6gamakwdqZoKKWGh0WqPLJyHgpk26cGD+1pY9SseQWQzWgufajZk5xKCNKctU0qgZwJYXFRCmmNZ38kZiP8RUe6aMUwGWqG1AqGjUhmqhaAYsZHQ4opUjZSy6juVW/+qhbLF8HqmyBGC5l0o1r7/DdgKWAcwn6MHzy1b0SKF1K5wNKBq6ed0/98ECnsafpgLrVWLvq3XFx9zTcWu8y5Rq12qe67hHxIKOuht2FohhorXN9BJDLPB5FpgNKhk9nIyo6t7rVZuj3zvV7bwG7abQ5UDrD5J4WlZ3t1fj896OUSuWbrfrNc4dP1RY19//O9GZEXVs+AIDPMrNMQts1AAAAAElFTkSuQmCC") 14 /  14px / 0 round;
+        border-width:  14px;
+        border-style:  solid;
+    }
