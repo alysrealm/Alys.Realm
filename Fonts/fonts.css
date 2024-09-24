@@ -1,0 +1,71 @@
+@font-face {
+  font-display: swap; 
+  font-family: 'Noto';
+  src: url('/Fonts/Noto_Serif/NotoSerif-VariableFont.ttf') format('woff2'); 
+}
+@font-face {
+  font-family: 'Noto';
+  font-style: italic;
+  src: url('/Fonts/Noto_Serif/NotoSerif-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'NugieRomantic';
+  src: url('/Fonts/NugieRomantic-BEoV.ttf');
+}
+
+@font-face {
+  font-family: 'New Rocker';
+  src: url('/Fonts/NewRocker-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('/Fonts/Minecraft.ttf')
+}
+
+@font-face {
+    font-family: 'Cat';
+    src: url('/Fonts/CATChilds.ttf'),
+        url('https://dl.dafont.com/dl/?f=cat_childs');
+}
+
+@font-face {
+    font-family: 'PixelPoiz';
+    src: url('/Fonts/pixelpoiiz.ttf');
+}
+
+@font-face {
+    font-family: 'Madina';
+    src: url('/Fonts/Madina.ttf');
+}
+
+@font-face {
+  font-family: 'MSPgothic';
+  src: url('/Fonts/ms-pgothic.ttf');
+}
+
+@font-face {
+  font-family: 'Romance';
+  src: url('/Fonts/RomanceA.ttf');
+}
+@font-face {
+  font-family: 'BirchLeaf';
+  src: url(/Fonts/BirchLeaf.otf);
+}
+
+/*Basiic by Cinni https://cinni.net/*/
+@font-face {
+  font-family: 'Basiic';
+  src: url(/Fonts/basiic.ttf);
+}
+/* Spirit by Asterism https://www.asterism-m.com/*/
+@font-face {
+  font-family: 'Spirit';
+  src: url('/Fonts/Spirit.ttf');
+}
+
+  @font-face {
+    font-family: 'DS';
+    src: url('/Fonts/Nintendo-DS-BIOS.ttf');
+  }
