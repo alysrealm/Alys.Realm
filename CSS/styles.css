@@ -1,0 +1,50 @@
+img {
+    max-width: 100%;
+}
+.imagebox {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.inflex {
+    display: inline-flex;
+}
+.row {
+    flex-direction: row;
+}
+.column {
+    flex-direction: column;
+}
+b {
+    font-weight: bold;
+}
+.center {
+    display: block;
+    margin: 0 auto;
+}
+.noMargin {
+    margin: 0;
+}
+.smalltext {
+    font-size: .6rem;
+}
+footer {
+    margin: 3em auto;
+    width: 50em;
+    height: 80px;
+    text-align: center;
+    padding: .625em;
+}
+
+
+/*=====Styling=====*/
+body {
+    font-family: 'Noto';
+    font-size: .70rem;
+    background-color: #a28ac7;
+}    
+/*site title*/
