@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang ="eng">
+    <head><meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href='frogfavicon.gif'>
+        <link rel="stylesheet" type="text/css" href="/Fonts/fonts.css">
+        <script language="javascript">
+            var titletext="SHRINES"
+            var repeat=true;    // SET TO true TO REPEAT, false TO "TYPE" OUT TITLE ONLY ONCE.
+            set=setTimeout;
+            var index=0;
+            function scrolltitle(){
+                if(index<=titletext.length){
+                    document.title=titletext.substring(0,index);
+                    index++;
+                    set('scrolltitle()', 200);
+                }else{
+                    index=0;
+                    if(repeat)set('scrolltitle()',1000);
+                 }}
+            window.onload=function(){
+                if(!document.layers)set('scrolltitle()',1000);
+                }
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <--!cursor--->
+            <script type="text/javascript">
+// <![CDATA[
+var colours=new Array('#f00', '#f06', '#f0f', '#f6f', '#f39', '#f9c'); // colours of the hearts
+var minisize=16; // smallest size of hearts in pixels
+var maxisize=28; // biggest size of hearts in pixels
+var hearts=66; // maximum number of hearts on screen
+var over_or_under="over"; // set to "over" for hearts to always be on top, or "under" to allow them to float behind other objects
+
+/*****************************
+*JavaScript Love Heart Cursor*
+*  (c)2013+ mf2fm web-design *
+*   http://www.mf2fm.com/rv  *
+*  DON'T EDIT BELOW THIS BOX *
+*****************************/
+var x=ox=400;
+var y=oy=300;
+var swide=800;
+var shigh=600;
+var sleft=sdown=0;
+var herz=new Array();
+var herzx=new Array();
+var herzy=new Array();
+var herzs=new Array();
+var kiss=false;
+
+if (typeof('addRVLoadEvent')!='function') function addRVLoadEvent(funky) {
+  var oldonload=window.onload;
+  if (typeof(oldonload)!='function') window.onload=funky;
+  else window.onload=function() {
+    if (oldonload) oldonload();
+    funky();
+  }
+}
+
+addRVLoadEvent(mwah);
+
+function mwah() { if (document.getElementById) {
+  var i, heart;
+  for (i=0; i<hearts; i++) {
+    heart=createDiv("auto", "auto");
+    heart.style.visibility="hidden";
+	heart.style.zIndex=(over_or_under=="over")?"1001":"0";
+    heart.style.color=colours[i%colours.length];
+	heart.style.pointerEvents="none";
+    if (navigator.appName=="Microsoft Internet Explorer") heart.style.filter="alpha(opacity=75)";
+    else heart.style.opacity=0.75;
+    heart.appendChild(document.createTextNode(String.fromCharCode(9829)));
+    document.body.appendChild(heart);
+    herz[i]=heart;
+	herzy[i]=false;
+  }
+  set_scroll();
+  set_width();
+  herzle();
+}}
+
+function herzle() {
+  var c;
+  if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
+    ox=x;
+    oy=y;
+    for (c=0; c<hearts; c++) if (herzy[c]===false) {
+	  herz[c].firstChild.nodeValue=String.fromCharCode(9829);
+      herz[c].style.left=(herzx[c]=x-minisize/2)+"px";
+      herz[c].style.top=(herzy[c]=y-minisize)+"px";
+      herz[c].style.fontSize=minisize+"px";
+	  herz[c].style.fontWeight='normal';
+      herz[c].style.visibility='visible';
+      herzs[c]=minisize;
+      break;
+    }
+  }
+  for (c=0; c<hearts; c++) if (herzy[c]!==false) blow_me_a_kiss(c);
+  setTimeout("herzle()", 40);
+}
+
+document.onmousedown=pucker;
+document.onmouseup=function(){clearTimeout(kiss);};
+
+function pucker() {
+  ox=-1;
+  oy=-1;
+  kiss=setTimeout('pucker()', 100);
+}
+
+function blow_me_a_kiss(i) {
+  herzy[i]-=herzs[i]/minisize+i%2;
+  herzx[i]+=(i%5-2)/5;
+  if (herzy[i]<sdown-herzs[i] || herzx[i]<sleft-herzs[i] || herzx[i]>sleft+swide-herzs[i]) {
+    herz[i].style.visibility="hidden";
+    herzy[i]=false;
+  }
+  else if (herzs[i]>minisize+2 && Math.random()<.5/hearts) break_my_heart(i);
+  else {
+    if (Math.random()<maxisize/herzy[i] && herzs[i]<maxisize) herz[i].style.fontSize=(++herzs[i])+"px";
+    herz[i].style.top=herzy[i]+"px";
+    herz[i].style.left=herzx[i]+"px";
+  }
+}
+
+function break_my_heart(i) {
+  var t;
+  herz[i].firstChild.nodeValue=String.fromCharCode(9676);
+  herz[i].style.fontWeight='bold';
+  herzy[i]=false;
+  for (t=herzs[i]; t<=maxisize; t++) setTimeout('herz['+i+'].style.fontSize="'+t+'px"', 60*(t-herzs[i]));
+  setTimeout('herz['+i+'].style.visibility="hidden";', 60*(t-herzs[i]));
+}
+
+document.onmousemove=mouse;
+function mouse(e) {
+  if (e) {
+    y=e.pageY;
+    x=e.pageX;
+  }
+  else {
+    set_scroll();
+    y=event.y+sdown;
+    x=event.x+sleft;
+  }
+}
+
+window.onresize=set_width;
+function set_width() {
+  var sw_min=999999;
+  var sh_min=999999;
+  if (document.documentElement && document.documentElement.clientWidth) {
+    if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+    if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+  }
+  if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+    if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+    if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+  }
+  if (document.body.clientWidth) {
+    if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+    if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+  }
+  if (sw_min==999999 || sh_min==999999) {
+    sw_min=800;
+    sh_min=600;
+  }
+  swide=sw_min;
+  shigh=sh_min;
+}
+
+window.onscroll=set_scroll;
+function set_scroll() {
+  if (typeof(self.pageYOffset)=='number') {
+    sdown=self.pageYOffset;
+    sleft=self.pageXOffset;
+  }
+  else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+    sdown=document.body.scrollTop;
+    sleft=document.body.scrollLeft;
+  }
+  else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+    sleft=document.documentElement.scrollLeft;
+    sdown=document.documentElement.scrollTop;
+  }
+  else {
+    sdown=0;
+    sleft=0;
+  }
+}
+
+function createDiv(height, width) {
+  var div=document.createElement("div");
+  div.style.position="absolute";
+  div.style.height=height;
+  div.style.width=width;
+  div.style.overflow="hidden";
+  div.style.backgroundColor="transparent";
+  return (div);
+}
+// ]]>
+</script>
+            
+            </--!cursor--->
+    </head>
+ <body>
+<div id='header'>
+    <h1>Shrines</h1>
+    <p>HELLO! you're looking at the directory for my little webshrines, coded in dedication to anything and everything I obsess over. <span style="font-style: italic; color: blue; display: inline-block;">(or just my future plans for them <(￣︶￣)>)</span></p>
+     </div>
+<div class='flex'>
+    <a><img class='image' id='img1' src='computers.gif'></a>
+    <div id='scrollbox'>
+    <h3>Upcoming....?</h3>
+         <ul style='align-self:stretch'>
+            <li>IASIP</li>
+            <li>My Cats</li>
+            <li>Junko Mizuno</li>
+            <li>Skyrim</li>
+            <li>    </li>
+         </ul>
+        </div>
+    <a href='https://m1cr0w4v3z.tumblr.com/post/175185234755/ulan-bator-8-sheets-of-clipart-from-hyper'><img class='image' id='img2' src='microwavepixels.gif'></a>
+     </div>    
+</body>
+</html>
+<style> 
+    * {
+        box-sizing: border-box;
+       
+        
+    }
+    
+    body {
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(starbackground1.gif);
+        font-family: 'Times New Roman';
+      
+            
+    }
+    
+    #header {
+        text-align: center; 
+        & p {
+            width: 380px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            background-color: white;
+            outline: 5px double white;
+            border: 12px groove #8F007C;
+        }   
+    }
+    
+    .flex {
+        display: flex;
+        justify-content : center;
+    
+        }
+    .image {
+        display: inline-block;
+        max-width: 300px;   
+        height: auto;
+    
+    }
+    #img1 {
+        position: relative;
+        right: 50px;
+        top: 60px;
+        transform: rotate(-6deg);
+        outline: 5px solid #2D108F;
+        border: 12px groove white;
+    }
+    
+    #img2 {
+        position: relative;
+        left: 40px;
+        top: 72px;
+        transform: rotate(6deg);
+        outline: 5px solid #007C8F;
+        border: 12px groove white;
+        
+    }
+    
+    #scrollbox {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        width: 18vw;
+        height: 55vh;
+        margin: 30px;   
+        padding: 32px;
+        overflow: scroll;
+        background-color: #CCFAFF;
+        color: #37008A;
+            border-image-slice: 41 41 41 41;
+            border-image-width: 20px 20px 20px 20px;
+            border-image-outset: 0px 0px 0px 0px;
+            border-image-repeat: stretch stretch;
+            border-image-source: url("https://i.pinimg.com/originals/02/be/36/02be36896b3a9f1be95fc2985ae9e932.gif");
+            border-style: solid; 
+       
+    }
+   
+    /*INDIVIDUAL STYLES*/
+    
+    h1 {
+        font-family: 'Times New Roman';
+        letter-spacing: 10px;
+        font-style: italic;
+        font-size: 60px;      
+        color: white;text-shadow: -5px 5px 1px #FF6BEF;
+    
+      
+    }   
+    h2 {
+        display: inline;
+        text-align: center;
+        
+    }
+    
+</style>
