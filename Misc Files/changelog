@@ -1,0 +1,66 @@
+#Changelog
+
+
+## [Unreleased]
+### Added
+
+## [1.3.0] 2024-07-15
+
+I unfortunately cannot keep myself from redoing the homepage again; I said I wanted to prioritize the rest of the site, but I still haven't gotten to that. I did figure out a lot as far as keeping my backend all nice and tidy however! I suppose this has been about 2 months in the works considering the last date I have in my little log here. I really want to be more active with my coding, but it's one of those things that takes a lot of brainpower from me personally. I want to use my changelog more too!  
+
+### Added
+- Guestbook link through Atabook
+- Blog link through Bearblog.dev
+- Artemis Fanlisting
+
+## [1.2.0] - 2024-05-31 
+
+### NOTE
+I had some other things that I wanted to upload all at once, but I couldn't wait, and my site had been dormant for a month at this point. I had the CSS all good for my Zonelets blog, but the script is messed up. Either I scrap it or start to learn Java so I can fix it :/ I'm working on renewing my about me and links page, and I hope to have made some progress on making my own button by the time I release the 'links' update since I will *finally* be adding other buttons.
+
+### Added
+
+- Collections page
+- Shrines page
+- 'WiiRing' webring widget
+- external CSS sheet
+- robots.txt file
+
+## [1.1.0] - 2024-05-02
+
+### NOTE
+1.1 has been in the works since the end of March, starting with my (unreleased) Shrine landing page. I moved onto the index shortly with the intention to make text easier to write and read, and to begin to make an external stylesheet in hopes of using the Zonelets script to add a blog section.
+    
+    "4/30/2024</b> -Hello all! I've changed my website a slight bit in favor of a layout that prioritizes text + information and gives me a bit more versatile code to work with to create some new pages. I'd love to individually create every page but I get burnt out easily and I have a lot to say! I started working on it a little under a month ago :'D, but then I got sick and subsequently hospitalized so I've been inactive in about every part of life lately LOL. No worries, I'm better :) Pissed that my body tried to kill me off again but..."
+
+### Added
+
+- Silly City webring
+- Lightened color scheme
+- Small manifesto section
+
+### Changed
+
+- Updated header with a custom title, cloud bg image, and lace border
+- Simplified layout, moved to-do and updates to sidebar
+
+------------------------------------------------------
+
+## [1.0.0] - 2024-03-31
+
+1.0 launched with the new 'grid' layout and green/black/purple/pink scheme
+
+### Added
+
+- Chatbox widget
+- Imood updater
+- Statuscafe updater 
+- Fanlists and Webring scrollboxes
+
+## [BETA]
+
+### Features
+
+- Strawberry 'Frankenstein' homepage
+- 404 page
+- Links page (1st 100% my code)

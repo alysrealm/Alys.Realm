@@ -1,0 +1,101 @@
+* {
+    cursor: url('/IMAGES/greenbow.png'), default;
+}
+body {
+    font-family: 'Basiic';
+    color: rgba(17, 35, 1, 0.997);
+    background-image: url('/home/webmistress/maroonflowers.png');
+    background-attachment:fixed;
+}
+#flex {
+    background-image: url('/home/webmistress/purple.jpg');
+    border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACvUlEQVR4Xu2c0XHjMAxE7QLSQJpI/2WkiTTgApLxZ+gZPe/skqaSvV8IIPC0AGlJueul/6IErtFoDXYp0LAICvSvA/36vH0rNb5/vG0liq2SuYMsUEVOT1xboE9AUi7590BdAKO/OhPJ381PEcP9WnuGugkTECqI/N38aP3RXqADEbVDChQktxxousWopcYC1RZ246uA5ZYv0ONbVKDDLy0SDCm+QFcDde8Y+ZOdFEH+ZHfjy7v87ITOHr9AxadT6g3HGaoGHO8Y+ZPdbcnZ8W2FjgHonKie49Rzphuf8qd6C3R4gF2g5m9vGgHUIdQR8gylFqCE1ZlI11OB7kyneuMtry5IgFbbSZFqfbZC1QVXA6P1CpQIifYCFYHR5cuBqkOdCtjd7m6qOEMLVPuQokAHxVSh4RkyHWh6aIfrt8Ol68OWTy9oEwgHSNdXoOGv/Qp0NlAayq493LFyODd/8n9QKDm4dplA2MHNn/wLVHyNXKDiwZ2AkV1WKHUgLUj+s+1ufuRfoOHXygVaoN5QoJal6OQvK5QCkp0Snm2n/Fx7gfbY5GnYVSD5V6GzFUqvPEgf6ocHFG+2vY/vwoQLtEDDBMLhliuUZurZZibdD9rFyR+f2Bdo38uTiA7tVaiF79F5OtD00A7Xb4dL14czNL2gTSAcIF1fgc5+jUy7OgnkbMeo7RRKf5aiAk4XSAKh/Ed/qsdueUqIEqCC0x1BuzjdUKqnQOHxXRUKkt5OoSR5auHZI2J1/LFeueUL9Pi3fYGaI6IKDX/YIAN1ZyIde8hOM5H8yU7x1RGHLV+gL34eSgdjUgyd+1bHr0LFO/bylqcRQPWkC3AP6tQRVI+9KRXoMWJ5UyrQAl3637jbClVnDF2v7uLqLkzru/YCdQkO/gVaoL8JtOXDitgt3HYtvxsgNZ8CVYnB9QUaBvoDYSJAkV2523gAAAAASUVORK5CYII=") 28 /  28px / 0 round;
+    border-width:  28px;
+    border-style:  solid;
+    outline: 2px double rgb(214, 255, 176);
+}
+#picrew {
+      border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAABkklEQVRYR+WZ7Q3CMAxE6SQMwRRMzBQMwSQgJFIhl9M7uwktgj+UNh8vjn12ynR4fU7H871dP7+vt8v0/ltdx36tnepP86jnMwwNsDloA4wWoPsRXPWndnFH1TgTAVUBqi6xGpQWpHwz9su6WGtvW3RzUOUjCiz6nNriaGF3ocqnF1HffGS3oMpSWT0kH3QNEHmkqNOACmgYKE3oWjSrl64Pt3Zz1Gc7ukFEwefGxOpgqtYKSl/VDv4eKOVc97lTcX1qQzq7iHo32t0y0AXvBkqy4wJRuRiDa456V+h3D9obkLa4bNHdgJKeUXBlfdPNhHHeRT1K4FmwamaSoNkU2gvYPauVc/3fgbo7ublFbdC1Z6beLqBUplv1VAV2VSZdlLi5OgtOev0/oJRiyVJunbvaol8HpRysZCTedy2ULS/x/Wh2AcNA3frQBaBjdLSkOi5j9URAFBzDQd1UFheiLJTVW9rZcq5XlqPTKQHJN869cz3JVXa+Nl73XD8c1NW1XjmcXCDGTPn9qAtMQPSvS3v+AOL0CfgSbWxgAAAAAElFTkSuQmCC") 14 /  14px / 0 round;
+        border-width:  14px;
+        border-style:  solid;
+}
+.box {
+    background-color: rgb(230, 209, 243);
+    border: 4px solid rgb(131, 73, 147);
+    border-radius: 2rem;
+}
+footer {
+    font-family: 'Basiic';
+    color: rgb(247, 224, 255);
+}
+.category {
+    font-family: 'Spirit';
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: #edffe1;
+    color: #1e0a3b;
+    border-radius: 1rem;
+    padding: .2rem;
+}
+.subcat {
+    font-weight: bold;
+    border: 2px dotted #610e6a;
+    color: #610e6a;
+    background-color: #ffffff;
+}
+h1 {
+    font-family: 'Spirit';
+    font-weight: 200;
+    font-size: 4rem;
+    color: rgb(228, 255, 202);
+    text-shadow: 2px 0px 2px #b078ff, -2px 0px 2px #b078ff, 0px 2px 2px #b078ff, 0px -2px 2px #b078ff, 0 0;
+
+}
+h2, h3 {
+    font-family: 'BirchLeaf';
+}
+h2 {
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    font-style: oblique;
+    background: linear-gradient(to top, #FFFDFE 2%, #FF78B1 100%);
+    font-size: 2em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #FE62B6;
+}
+ul {
+    list-style: url('ca15-icon-twinkle.gif');
+}
+a {
+    color: rgb(193, 0, 96);
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: rgb(227, 135, 230);
+    background: rgb(176, 246, 164);
+  }
+  
+  ::selection {
+    color: rgb(227, 135, 230);
+    background: rgb(176, 246, 164);
+  }
+  @media only screen and (max-width: 970px) {
+    h1 {
+        font-size: 3rem;
+    } 
+}
+  @media only screen and (max-width:400px) {
+    h1 {
+        font-size: 2rem;
+        
+    }
+    #flex {
+        background-image: none;
+        border: none;
+        outline: none;
+        } 
+    }

@@ -196,3 +196,25 @@ footer a {
         border-width:  14px;
         border-style:  solid;
     }
+    h1 {
+        font-family: 'NugieRomantic';
+        font-size: 4.5rem;
+        color: #0f0719;
+        font-weight: 100;
+        margin: 0;
+        margin-top: 2rem;
+        text-shadow: 1px 0px 2px #9dffe3,
+        1px 2px 1px #c063e8,
+        2px 2px 0px #340d8e,
+        2px 2px 0px #273a48,
+        0px 0px 2rem rgb(179, 255, 244);
+    }
+    /*nav title*/
+    h2 {
+        font-family: 'Spirit';
+        color: #2f0756;
+        font-size: 1.6rem;
+    }
+    h4 {
+        font-size: .9rem;
+    }

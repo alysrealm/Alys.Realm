@@ -1,0 +1,73 @@
+:root {font-size: 16px;}
+
+header {
+    max-width: 30rem;
+    height: 18rem;
+    margin: 0 auto;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.textbox {
+    padding: 2rem;
+    width: 20rem;
+    max-height: 18rem;
+    overflow: scroll;
+}
+    
+.row {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+#likeDislike {
+    display: inline-flex;
+    width: 30rem;
+    flex-direction: column;
+}
+
+.likes {
+    flex: 50%;
+}
+.dislike {
+    flex: 50%;
+}
+
+
+.gallery {
+    width: 30rem;
+    max-height: 20rem;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid darkolivegreen;
+    background: yellowgreen;
+    margin: 2px;
+}
+
+.gallery img:hover {
+    object-fit: contain;}
+
+
+  

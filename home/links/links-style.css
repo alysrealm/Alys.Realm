@@ -1,0 +1,77 @@
+ body {
+        background-image: url('dithered-image.png');
+        background-attachment: fixed;
+        font-family: 'DS';
+        cursor: url('/IMAGES/greenbow.png'), auto !important;
+        cursor: url('/IMAGES/greenbow.png') pointer !important;
+    }
+    .column {
+        background-color: #ba87ea;
+        box-shadow: inset #4c243c 0px 0px 60px 40px;
+        color: #a8ff89;
+        border-radius: 2rem;
+        border:5px double #5d00ff;
+    }
+    h1 {
+        font-family: 'Spirit';
+        color:#a8ff89;
+        text-shadow: -3px 2px 3px #5d00ff;
+        font-size: 3rem;
+        font-style: italic;
+        font-weight: 200;
+    }
+
+    h2 {
+        font-family: 'BirchLeaf';
+        font-weight: 200;
+        font-size: 2rem;
+        display: inline;
+        color: rgb(218, 163, 255);
+        text-shadow: -3px 2px 0px #db1061;
+      }
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: #0d0132;
+        text-shadow: 1px 1px 1px #a8ff89;
+    }
+    p {
+        font-size: 1.125rem;
+        line-height: 0.7;
+        font-weight: 300;
+    }
+    ul {
+        list-style: url('/home/links/black\ envelope.gif');
+    }   
+
+    a:link {
+        color: #5d00ff;
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+    hr {
+        height: 4rem;
+        background-image: url(/home/links/dollz.gif);
+        background-repeat: no-repeat;
+        border: none;
+    }
+    a:visited {
+        color: #b0ffec;
+    }
+
+    a:hover {
+        background-color: #ff97c2;
+        font-size: 20px;
+    }
+ 
+    ::-moz-selection { /* Code for Firefox */
+        color: rgb(255, 77, 202);
+        background: rgb(165, 255, 145);
+    }
+  
+  ::selection {
+        color: rgb(255, 77, 202);
+        background: rgb(165, 255, 145);
+    }
+
+   
