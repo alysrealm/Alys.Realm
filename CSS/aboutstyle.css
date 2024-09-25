@@ -4,11 +4,11 @@
 body {
     font-family: 'Basiic';
     color: rgba(17, 35, 1, 0.997);
-    background-image: url('/home/webmistress/maroonflowers.png');
+    background-image: url('/IMGs/about-me/maroonflowers.png');
     background-attachment:fixed;
 }
 #flex {
-    background-image: url('/home/webmistress/purple.jpg');
+    background-image: url('/IMGs/about-me/purple.jpg');
     border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACvUlEQVR4Xu2c0XHjMAxE7QLSQJpI/2WkiTTgApLxZ+gZPe/skqaSvV8IIPC0AGlJueul/6IErtFoDXYp0LAICvSvA/36vH0rNb5/vG0liq2SuYMsUEVOT1xboE9AUi7590BdAKO/OhPJ381PEcP9WnuGugkTECqI/N38aP3RXqADEbVDChQktxxousWopcYC1RZ246uA5ZYv0ONbVKDDLy0SDCm+QFcDde8Y+ZOdFEH+ZHfjy7v87ITOHr9AxadT6g3HGaoGHO8Y+ZPdbcnZ8W2FjgHonKie49Rzphuf8qd6C3R4gF2g5m9vGgHUIdQR8gylFqCE1ZlI11OB7kyneuMtry5IgFbbSZFqfbZC1QVXA6P1CpQIifYCFYHR5cuBqkOdCtjd7m6qOEMLVPuQokAHxVSh4RkyHWh6aIfrt8Ol68OWTy9oEwgHSNdXoOGv/Qp0NlAayq493LFyODd/8n9QKDm4dplA2MHNn/wLVHyNXKDiwZ2AkV1WKHUgLUj+s+1ufuRfoOHXygVaoN5QoJal6OQvK5QCkp0Snm2n/Fx7gfbY5GnYVSD5V6GzFUqvPEgf6ocHFG+2vY/vwoQLtEDDBMLhliuUZurZZibdD9rFyR+f2Bdo38uTiA7tVaiF79F5OtD00A7Xb4dL14czNL2gTSAcIF1fgc5+jUy7OgnkbMeo7RRKf5aiAk4XSAKh/Ed/qsdueUqIEqCC0x1BuzjdUKqnQOHxXRUKkt5OoSR5auHZI2J1/LFeueUL9Pi3fYGaI6IKDX/YIAN1ZyIde8hOM5H8yU7x1RGHLV+gL34eSgdjUgyd+1bHr0LFO/bylqcRQPWkC3AP6tQRVI+9KRXoMWJ5UyrQAl3637jbClVnDF2v7uLqLkzru/YCdQkO/gVaoL8JtOXDitgt3HYtvxsgNZ8CVYnB9QUaBvoDYSJAkV2523gAAAAASUVORK5CYII=") 28 /  28px / 0 round;
     border-width:  28px;
     border-style:  solid;

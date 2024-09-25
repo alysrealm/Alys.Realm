@@ -1,9 +1,9 @@
  body {
-        background-image: url('dithered-image.png');
+        background-image: url('/IMGs/links/dithered-image.png');
         background-attachment: fixed;
         font-family: 'DS';
-        cursor: url('/IMAGES/greenbow.png'), auto !important;
-        cursor: url('/IMAGES/greenbow.png') pointer !important;
+        cursor: url('/IMGs/greenbow.png'), auto !important;
+        cursor: url('/IMGs/greenbow.png') pointer !important;
     }
     .column {
         background-color: #ba87ea;
