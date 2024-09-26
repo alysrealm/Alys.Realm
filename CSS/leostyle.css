@@ -1,11 +1,11 @@
 * {
-    cursor: url('/cats/garfield.png'), auto;
+    cursor: url('/IMGs/leo/garfield.png'), auto;
     }
 
 header {
     border: 2px solid black;
     background-color: rgb(249, 214, 154);
-    background-image: url('/cats/leo/sleeping.png');
+    background-image: url('/IMGs/leo/sleeping.png');
     background-repeat: no-repeat;
 }
 
@@ -27,11 +27,11 @@ h1 {
 }
 
 .likes {
-    list-style: url('/cats/heart.gif');
+    list-style: url('/IMGs/leo/heart.gif');
     }
     
 .dislikes {
-    list-style: url(/cats/angy.gif);
+    list-style: url(/IMGs/leo/angy.gif);
     }
 
     .textbox {

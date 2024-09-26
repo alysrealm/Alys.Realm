@@ -69,3 +69,8 @@
     font-family: 'DS';
     src: url('/Fonts/Nintendo-DS-BIOS.ttf');
   }
+
+  @font-face {
+    font-family:"Textile";
+    src: url('/Fonts/Textile.ttf')   
+}

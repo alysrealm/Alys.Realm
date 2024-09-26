@@ -13,10 +13,6 @@ body {
     align-items: center;
 }
 
-
-
-
-
 h2 {
     display: block;
     width: 100%;
@@ -68,6 +64,3 @@ h2 {
 
 .gallery img:hover {
     object-fit: contain;}
-
-
-  

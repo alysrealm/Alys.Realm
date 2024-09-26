@@ -218,3 +218,10 @@ footer a {
     h4 {
         font-size: .9rem;
     }
+    
+/*=====Styling=====*/
+body {
+    font-family: 'Noto';
+    font-size: .70rem;
+    background-color: #a28ac7;
+}    
