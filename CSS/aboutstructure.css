@@ -4,10 +4,6 @@
     font-size: 16px;
 }
 
-.responsive {/* Makes an image responsive ~to it's container~ */
-    width: 100%;
-    height: auto;
-    }
 
 body {
     justify-content: center;

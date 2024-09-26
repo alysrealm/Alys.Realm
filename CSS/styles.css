@@ -1,24 +1,39 @@
+:root {
+    font-size: 16px;
+}
+
 img {
     max-width: 100%;
 }
-.gallery {
+.responsive {/* Makes an image responsive ~to it's container~*/
+    width: 100%;
+    height: auto;
+    }
+
+.gallery {/*Creates an image gallery*/
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
 }
+
+/*----------  Flex classes  ----------*/
 .flex {
     display: flex;
 }
+
 .inflex {
     display: inline-flex;
 }
+
 .row {
     flex-direction: row;
 }
+
 .column {
     flex-direction: column;
 }
+
 b {
     font-weight: bold;
 }
