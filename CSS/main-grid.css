@@ -1,0 +1,35 @@
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template:
+      "header header header"
+      "left-sidebar main right-sidebar"
+      "footer footer footer"
+      / 1fr 3fr 2fr;
+  }
+
+/* determines the width of grid wrapper 
+    .wrap-width {
+        max-width: 80rem;
+        margin: 0 auto;
+        }   
+    */
+
+    header { grid-area: header; }
+    aside .left-sidebar { grid-area: left-sidebar; }
+    aside .right-sidebar { grid-area: right-sidebar; }
+    main { grid-area: main; }
+    footer { grid-area: footer; }
+
+    @media (max-width: 800px) {
+        .wrapper {
+            grid-template:
+            "header"
+            "main"
+            "left-sidebar"
+            "right-sidebar"
+            "footer"
+            / 1fr;
+        }
+    }

@@ -1,12 +1,7 @@
 @font-face {
   font-display: swap; 
-  font-family: 'Noto';
-  src: url('/Fonts/Noto_Serif/NotoSerif-VariableFont.ttf') format('woff2'); 
-}
-@font-face {
-  font-family: 'Noto';
-  font-style: italic;
-  src: url('/Fonts/Noto_Serif/NotoSerif-Italic.ttf');
+  font-family: 'Besley';
+  src: url('/Fonts/besley-regular.woff2') format('woff2'); 
 }
 
 @font-face {
@@ -73,4 +68,9 @@
   @font-face {
     font-family:"Textile";
     src: url('/Fonts/Textile.ttf')   
+}
+
+@font-face {
+  font-family: 'Heart';
+  src: url(/Fonts/heartfont.ttf);
 }
