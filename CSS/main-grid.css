@@ -1,12 +1,14 @@
 
 .wrapper {
     display: grid;
-    grid-gap: 10px;
+    gap: 16px;
     grid-template:
       "header header header"
       "left-sidebar main right-sidebar"
       "footer footer footer"
-      / 1fr 3fr 2fr;
+      / 1fr 4fr 2fr;
+      justify-content: space-around;
+      justify-items: center;
   }
 
 /* determines the width of grid wrapper 
@@ -22,7 +24,17 @@
     main { grid-area: main; }
     footer { grid-area: footer; }
 
-    @media (max-width: 800px) {
+    @media (max-width: 1060px) {
+        .wrapper {
+            grid-template:
+            "header header"
+            "left-sidebar main"
+            "right-sidebar right-sidebar"
+            "footer footer"
+            / 1fr;
+        }
+    }
+    @media (max-width: 400px) {
         .wrapper {
             grid-template:
             "header"
@@ -32,4 +44,7 @@
             "footer"
             / 1fr;
         }
+    }
+    @media (max-width: 600px) {
+       
     }

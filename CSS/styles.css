@@ -37,6 +37,10 @@ img {
 b {
     font-weight: bold;
 }
+i {
+    font-style: italic;
+}
+s {text-decoration: line-through;}
 .center {
     display: block;
     margin: 0 auto;
