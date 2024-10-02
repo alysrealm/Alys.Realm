@@ -34,13 +34,6 @@ img {
     flex-direction: column;
 }
 
-b {
-    font-weight: bold;
-}
-i {
-    font-style: italic;
-}
-s {text-decoration: line-through;}
 .center {
     display: block;
     margin: 0 auto;
@@ -48,6 +41,14 @@ s {text-decoration: line-through;}
 .noMargin {
     margin: 0;
 }
+
+
+b {font-weight: bold;}
+
+i {font-style: italic;}
+
+s {text-decoration: line-through;}
+
 .smalltext {
     font-size: .6rem;
 }

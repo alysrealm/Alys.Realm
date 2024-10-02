@@ -1,4 +1,5 @@
 
+
 .wrapper {
     display: grid;
     gap: 16px;
@@ -9,14 +10,9 @@
       / 1fr 4fr 2fr;
       justify-content: space-around;
       justify-items: center;
+      align-content: stretch;
+      margin: 0 auto;
   }
-
-/* determines the width of grid wrapper 
-    .wrap-width {
-        max-width: 80rem;
-        margin: 0 auto;
-        }   
-    */
 
     header { grid-area: header; }
     aside .left-sidebar { grid-area: left-sidebar; }
@@ -24,7 +20,10 @@
     main { grid-area: main; }
     footer { grid-area: footer; }
 
+
+
     @media (max-width: 1060px) {
+        :root {font-size: 13px;}
         .wrapper {
             grid-template:
             "header header"
@@ -34,7 +33,14 @@
             / 1fr;
         }
     }
-    @media (max-width: 400px) {
+    /* tablet breakpoint */
+@media (min-width:768px) {
+
+}
+
+    @media (max-width: 800px) {
+        :root {font-size: 11px;}
+
         .wrapper {
             grid-template:
             "header"
@@ -44,7 +50,29 @@
             "footer"
             / 1fr;
         }
+      }
+
+    @media (max-width: 800px)  {
+        .wrapper {
+            max-width: 100%;
+            overflow-x: none;
+        }
+                .wrapper div {
+            max-width: 90vw;
+        }
+        main {
+            width: 80vw;
+        }
+        .left-sidebar, .right-sidebar {
+            max-width: 90vw;
+    } 
+}
+@media (min-width: 100px) {
+    main > div {
+        margin: 0 auto;
     }
-    @media (max-width: 600px) {
-       
+    main {
+        align-content: center;
     }
+
+}

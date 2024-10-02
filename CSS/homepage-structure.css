@@ -1,19 +1,16 @@
 
+
+
 * {box-sizing: border-box;}
 
+
 .wrap-width {
-    max-width: 80rem;
-    margin: 0 auto;
+    max-width: 84vw;
   }
 
 .header {
     text-align: center;
     margin: 0;
-}
-
-main {
-    display: inline-flex;
-    flex-flow: column wrap;
 }
 
 .left-sidebar, .right-sidebar {
@@ -23,18 +20,20 @@ main {
 }
 
 .inner-box {
-    padding: 1em;
+    padding: 1rem;
 }
-    nav {
-        display: inline-block;
-        width: 12rem;
-        padding: 1rem;
-        text-align: center;
-    }   
-        .navlink {
-            display: block;
-            font-size: 1rem;
-        }
+
+nav {
+    display: inline-block;
+    width: 12rem;
+    padding: 1rem;
+    text-align: center;
+}   
+
+.navlink {
+    display: block;
+    font-size: 1rem;
+}
 
     #sitely {
         display: inline-block;
@@ -66,21 +65,17 @@ main {
 #neighborhood {
     display: inline-flex;
     padding: 1.6rem;
+    flex-direction: column;
 }
 
 /*=============================================
 =                Page Styling                =
 =============================================*/
 
-   /*nav title*/
    h2 {
     font-family: 'Heart';
     color: #2f0756;
     font-size: 1.6rem;
-}
-
-h4 {
-    font-size: 1rem;
 }
 
 h3 {
