@@ -1,8 +1,25 @@
-
-
+:root {
+    --color-one: #aff1c4;
+    --color-two: #161049;
+    --color-three: #196d85;
+    --color-four: #2a2d51;
+}
 
 * {box-sizing: border-box;}
 
+body {
+    background-image: url(/538695.png);
+    font-family: 'Besley';
+    font-size: .70rem;
+    background-color: var(--color-two);
+    color: var(--color-one);
+    }    
+    
+
+    
+/*=============================================
+=             Framework/classes              =
+=============================================*/
 
 .wrap-width {
     max-width: 84vw;
@@ -11,6 +28,8 @@
 .header {
     text-align: center;
     margin: 0;
+    margin-bottom: 1.5rem;
+    font-size: 40vw;
 }
 
 .left-sidebar, .right-sidebar {
@@ -21,6 +40,10 @@
 
 .inner-box {
     padding: 1rem;
+    margin: 1rem;
+    border: 3px solid var(--color-one);
+    border-radius: 5px;
+    background-color: var(--color-four);
 }
 
 nav {
@@ -43,54 +66,58 @@ nav {
         padding: 1rem;
     }
         
-            #latest {
-                padding: 6px;
-            }
-
     #webrings {
         height: 16rem;
         overflow: scroll;
         width: 16rem;
-        padding: 1rem;
         align-content: space-around;
     }
 
-    #fanlists {
-        width: 18rem;
-        height: 22rem;
-        overflow: scroll;
-        padding: .7rem;
-    }
+
 
 #neighborhood {
+    max-height: 20rem;
     display: inline-flex;
-    padding: 1.6rem;
-    flex-direction: column;
+    padding: 1.8rem;
+    @media (max-width: 800px) 
+        {flex-direction: column;
+        max-height: max-content;}
+    }
+
+#neighborhood div {
+    flex: 1 1;
+    & h3 {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /*=============================================
 =                Page Styling                =
 =============================================*/
 
+h1 {
+    font-family: 'NugieRomantic';
+    font-size: 4.5rem;
+    color: var(--color-one);
+    margin: 0;
+    margin-top: 2rem;
+    text-shadow:
+    1px 2px 1px #c063e8,
+    2px 2px 0px #340d8e,
+    2px 2px 0px #273a48;
+}
+
    h2 {
     font-family: 'Heart';
-    color: #2f0756;
     font-size: 1.6rem;
 }
 
 h3 {
     font-family: 'Spirit';
-    color: #f3e2ff;
 }
  
-#greetings {
-    font-size: .89rem;
-    color:  #210968;
-    text-shadow: -1px 1px 2px rgb(108, 122, 249),
-                1px 1px 4px rgb(168, 114, 248);
-    font-weight: 500;
-}
-
 
 .navlink {
     font-family: 'Basiic';
@@ -98,19 +125,9 @@ h3 {
     text-decoration: none;
     padding: .3rem;
     font-style: italic;
-    color: #69002f; 
+    color: var(--color-three); 
 }
-#cliques {
-    max-width: 200px;
-}
-li {
-    list-style: url('/IMAGES/whitestar.gif');
-}
-
 #button {
-    background-color: #201627;
-    color: #f3a3cc;
-    border-radius: 10px;
     margin: auto;
     width: 9rem;
     height: 9rem;
@@ -118,12 +135,6 @@ li {
 }
 #button img {
     margin: 1rem;
-}
-
-.inner-box {
-    border: 2px solid rgb(127, 75, 211);
-    border-radius: 5px;
-    background-color: #cda0d3;
 }
 
 #sitely {
@@ -141,30 +152,6 @@ li {
     padding: 4px;
 }
 
-/* STATUS CAFE */
-
-    #statuscafe {
-        background: rgb(238,221,250);
-        border-radius: 10px;
-        padding: .5em;
-        margin: .5em;
-        border-radius: 10px;
-    }
-    #statuscafe-username {
-        font-family: 'PixelPoiz';
-        font-size: .9rem;
-        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.711);
-        & a {
-            color: #c306b0;
-        }
-        margin-bottom: .5em;
-    }
-    #statuscafe-content {
-        margin: 0 0.8em 0.5em 0.8em;
-        font-size: .7rem;
-    }
-/*****/
-
 .textcliq {
     display: block;
     margin: 2px 0;
@@ -173,34 +160,54 @@ li {
     width: 100%;
 }
 
-#cbox {
-    margin: auto;
-    width: 200px;
-    height: 200px;
-}
 
-/*CURRENTLY SECTION*/
-    #currently {
-        border-radius: 1rem;
-        font-size: .75rem;
-    }
-    #currently span {
-        font-weight: bold;
-    }
-    
-/*****/
+
+#stats {
+    padding: 1rem;
+    align-items: center;
+    height: 8rem;
+}
 
 footer {
     font-family: 'MS Gothic';
     text-shadow: 1px 0px #451dab, -1px 0px #451dab, 0px 1px #451dab, 0px -1px #451dab, 0 0 1rem white;
-    color: rgb(255, 255, 255);
+    color: var(--color-one);
     font-weight: 900;
     font-size: .9rem;
+    & a {
+        color: #98f8d8;
+    }
 }
 
-footer a {
-    color: #98f8d8;
+/*=============================================
+=          ✦•┈๑⋅⋯ EXTRAS ⋯⋅๑┈•✦            =
+=============================================*/
+
+/*----------  Status Cafe🍵  ----------*/
+#statuscafe {
+    background: var(--color-one);
+    border-radius: 10px;
+    padding: .5em;
+    margin: .5em;
+    border-radius: 10px;
 }
+#statuscafe-username {
+    font-family: 'PixelPoiz';
+    font-size: .9rem;
+    
+    & a {
+        color: #c306b0;
+    }
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 0.8em 0.5em 0.8em;
+    font-size: .7rem;
+}
+/*=====  🫖  ======*/
+
+
+/*====  IMood ☺️  =====*/
 #imood {
     text-align: center;
     display: block;
@@ -208,33 +215,13 @@ footer a {
     font-family: 'NugieRomantic';
     font-size: 1rem;
 }
-#stats {
-    padding: 1rem;
-    align-items: center;
-    height: 8rem;
+
+/*=====  ChatBox💬  ======*/
+#cbox {
+    margin: auto;
+    height: 200px;
+    background-color: #98f8d8;
 }
-
-h1 {
-    font-family: 'NugieRomantic';
-    font-size: 4.5rem;
-    color: #0f0719;
-    font-weight: 100;
-    margin: 0;
-    margin-top: 2rem;
-    text-shadow: 1px 0px 2px #9dffe3,
-    1px 2px 1px #c063e8,
-    2px 2px 0px #340d8e,
-    2px 2px 0px #273a48,
-    0px 0px 2rem rgb(179, 255, 244);
-}
-
-/*=====Styling=====*/
-body {
-font-family: 'Besley';
-font-size: .70rem;
-background-color: #a28ac7;
-}    
-
 
 
     /* ===== Scrollbar CSS ===== */
@@ -244,6 +231,7 @@ background-color: #a28ac7;
     scrollbar-color: #8054c9 #f9c5fc;
   }
 
+  
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 16px;
