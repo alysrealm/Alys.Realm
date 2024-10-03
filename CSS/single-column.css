@@ -1,0 +1,27 @@
+.wrapper {
+    display: inline-flex;
+  flex-direction: column;
+  align-self: center;
+  height: 100%;
+  width: 45%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.wrapper div {
+    margin: 1rem auto;
+  }
+
+.textbox {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 20rem;
+    max-height: 18rem;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 800px) {
+    :root {font-size: 14px;}
+}
+@media screen and (max-width: 400px) {
+    :root {font-size: 11px;}
+}
