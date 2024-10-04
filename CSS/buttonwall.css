@@ -1,62 +1,41 @@
 
-:root {
-    font-size: 16px;
-}
-* {
-    cursor:url("/home/buttonwall/key.png"), default;
+:root {font-size: 16px;}
+
+* { 
+    cursor:url("/IMGs/button-wall/key.png"), default;
     box-sizing: border-box;
 }
-
+    
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('/home/buttonwall/orangebg.png');
-    background-attachment: fixed;
-}
 
-#container {
+    background-image: url('/IMGs/button-wall/orangebg.png');
+    background-attachment: fixed;
+    font-family: 'MSPgothic';
+    font-size: 1.3rem; }
+
+main {
     display: inline-flex;
-    flex-direction: column;
-    width: 60rem;
-    min-height: 40rem;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column; 
+    max-width: 48rem;
     padding: 1.4rem;
     align-items: center;
-    /*STYLE*/
     background-color: #ffe6af;
-    border-radius: 2rem;
-    border: 6px outset #341360;
 }
 
-
-    .imagebox {
-        display: inline-flex;
-        flex-flow: row wrap;
-        align-content: space-around ;
-        & img {
-            margin: .3rem;
-        }
-    }
-
-    footer {
-        margin: 3em auto;
-        width: 50em;
-        height: 80px;
-        text-align: center;
-        padding: .625em;
-    }
+footer {
+    margin: 3em auto;
+    width: 50em;
+    height: 80px;
+    text-align: center;
+    padding: .625em;
+}
     
-body {
-    font-family: 'MSPgothic';
-    font-size: 1.3rem;
-    background-color: #8f7ec7;
-}    
-
 h1 {
     font-family: 'Spirit';
-    font-size: 5rem;
+    font-size: 3rem;
     color: #91c0fe;
     font-weight: 100;
     text-shadow: 3px 1px 1px #3d290d, 
@@ -65,45 +44,42 @@ h1 {
                 0px -1px 3px #3d290d;
     margin-bottom: -.5rem;
 }
-
 h3 {
     font-family: 'Basiic';
 }
-#Coraline {
-    position: fixed;
-    top: 4rem;
-}
+
+
+/*=============================================
+=                EXTRAS ࿐ ࿔*:･ﾟ               =
+=============================================*/
+
     /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #8054c9 #f9c5fc;
-  }
+    * {/*Firefox*/
+        scrollbar-width: auto;
+        scrollbar-color: #8054c9 #f9c5fc;
+    }
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #f9c5fc;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #8054c9;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
-  }
-   
-  ::-moz-selection { /* Code for Firefox */
-    color: rgb(230, 168, 122);
-    background: rgb(81, 56, 6);
-}
-
-::selection {
-    color: rgb(230, 168, 122);
-    background: rgb(81, 56, 6);
-}
+    *::-webkit-scrollbar { /* Chrome/Edge/Safari */
+        width: 16px;
+    }
+    *::-webkit-scrollbar-track {
+        background: #f9c5fc;
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: #8054c9;
+        border-radius: 10px;
+        border: 3px solid #ffffff;
+    }
+    /*=====  End of Scrollbar  ======*/
+    
+    ::-moz-selection { /* Code for Firefox */
+        color: rgb(230, 168, 122);
+        background: rgb(81, 56, 6);
+    }
+    ::selection {
+        color: rgb(230, 168, 122);
+        background: rgb(81, 56, 6);
+    }
 
 
   
