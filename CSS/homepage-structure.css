@@ -18,10 +18,7 @@ body {
 /*=============================================
 =             Framework/classes              =
 =============================================*/
-
-.wrap-width {
-    max-width: 84vw;
-  }
+.wrap-width {max-width: 84vw;}
 
 .header {
     text-align: center;
@@ -43,19 +40,16 @@ body {
     border-radius: 5px;
     background-color: var(--color-four);
 }
-
 nav {
     display: inline-block;
     width: 12rem;
     padding: 1rem;
     text-align: center;
 }   
-
 .navlink {
     display: block;
     font-size: 1rem;
 }
-
     #sitely {
         display: inline-block;
         height: 11rem;
@@ -64,15 +58,8 @@ nav {
         padding: 1rem;
     }
         
-    #webrings {
-        height: 16rem;
-        overflow: scroll;
-        width: 16rem;
-        align-content: space-around;
-    }
 
-
-
+/*=====  Neighborhood  ======*/
 #neighborhood {
     max-height: 20rem;
     display: inline-flex;
@@ -90,6 +77,22 @@ nav {
         text-align: center;
     }
 }
+#webrings {
+    height: 16rem;
+    overflow: scroll;
+    width: 16rem;
+    align-content: space-around;
+}
+.textcliq {
+    display: block;
+    margin: 2px 0;
+    text-align: center;
+    object-fit: contain;
+    width: 100%;
+}
+/*=====  End of Neighborhood  ======*/
+
+
 
 /*=============================================
 =                Page Styling                =
@@ -115,7 +118,11 @@ h1 {
 h3 {
     font-family: 'Spirit';
 }
- 
+
+
+ .left-sidebar {
+    background-image: url('/IMGs/');
+ }
 
 .navlink {
     font-family: 'Basiic';
@@ -141,7 +148,6 @@ h3 {
         font-size: 1rem;
     }
 }
-
 #sitely p:first-of-type {
     background-color: rgb(87, 33, 87);
     border: 2px solid rgb(116, 40, 116);
@@ -149,17 +155,6 @@ h3 {
     border-radius: 1rem;
     padding: 4px;
 }
-
-.textcliq {
-    display: block;
-    margin: 2px 0;
-    text-align: center;
-    object-fit: contain;
-    width: 100%;
-}
-
-
-
 #stats {
     padding: 1rem;
     align-items: center;
