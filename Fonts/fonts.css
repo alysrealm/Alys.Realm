@@ -20,19 +20,8 @@
 }
 
 @font-face {
-    font-family: 'Cat';
-    src: url('/Fonts/CATChilds.ttf'),
-        url('https://dl.dafont.com/dl/?f=cat_childs');
-}
-
-@font-face {
     font-family: 'PixelPoiz';
     src: url('/Fonts/pixelpoiiz.ttf');
-}
-
-@font-face {
-    font-family: 'Madina';
-    src: url('/Fonts/Madina.ttf');
 }
 
 @font-face {
@@ -48,6 +37,7 @@
   font-family: 'BirchLeaf';
   src: url(/Fonts/BirchLeaf.otf);
 }
+
 
 /*Basiic by Cinni https://cinni.net/*/
 @font-face {
@@ -70,7 +60,3 @@
     src: url('/Fonts/Textile.ttf')   
 }
 
-@font-face {
-  font-family: 'Heart';
-  src: url(/Fonts/heartfont.ttf);
-}
