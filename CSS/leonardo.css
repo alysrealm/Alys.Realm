@@ -52,7 +52,7 @@ h2 {
 }
 .dislike {
   grid-column: 2;
-  list-style: url(/IMGs/leo/angy.gif);
+  list-style: url("/IMGs/leo/angy.gif");
 }
 
 .gallery {
@@ -93,7 +93,8 @@ h1 {
   font-size: 2.5rem;
   font-weight: 300;
   text-align: center;
-  color: rgb(55, 5, 113);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px black;
 }
 
 .beginning {
@@ -101,7 +102,7 @@ h1 {
 }
 
 .textbox {
-  border: 4px outset #7b548d;
+  border: 4px outset #8d5454;
   border-radius: 2rem;
 }
 
