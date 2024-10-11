@@ -1,0 +1,28 @@
+body {
+    background: url('/4867028.png');
+    background-attachment: fixed;
+}
+
+.wrapper {
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: bisque;
+    padding: 1rem;
+}
+
+.font {
+    border-bottom: 2px solid black;
+    padding: 1rem;
+}
+
+#Spirit {font-family: 'Spirit';}
+
+#Basiic {font-family: 'Basiic';}
+
+#DS {font-family: 'DS';}
+
+#MSPGoth {font-family: 'MSPgothic';}
+
+#Poiz {font-family: 'PixelPoiz';}
+
