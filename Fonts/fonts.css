@@ -3,7 +3,10 @@
   font-family: 'Besley';
   src: url('/Fonts/besley-regular.woff2') format('woff2'); 
 }
-
+@font-face {
+  font-family: 'LibreFrank';
+  src: url(/Fonts/LibreFranklin-VariableFont_wght.ttf);
+}
 @font-face {
   font-family: 'NugieRomantic';
   src: url('/Fonts/NugieRomantic-BEoV.ttf');
@@ -33,17 +36,18 @@
   font-family: 'Romance';
   src: url('/Fonts/RomanceA.ttf');
 }
+
 @font-face {
   font-family: 'BirchLeaf';
   src: url(/Fonts/BirchLeaf.otf);
 }
-
 
 /*Basiic by Cinni https://cinni.net/*/
 @font-face {
   font-family: 'Basiic';
   src: url(/Fonts/basiic.ttf);
 }
+
 /* Spirit by Asterism https://www.asterism-m.com/*/
 @font-face {
   font-family: 'Spirit';
