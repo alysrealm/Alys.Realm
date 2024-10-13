@@ -13,7 +13,7 @@ body {
     font-size: .70rem;
     background-color: var(--color-two);
     color: var(--color-one);
-    }    
+}
     
 /*=============================================
 =             Framework/classes              =
@@ -40,16 +40,18 @@ body {
     border-radius: 5px;
     background-color: var(--color-four);
 }
-nav {
-    display: inline-block;
-    width: 12rem;
+        nav {
+            display: inline-block;
+            width: 12rem;
     padding: 1rem;
-    text-align: center;
-}   
-.navlink {
-    display: block;
-    font-size: 1rem;
-}
+            text-align: center;
+            overflow: none  scroll;
+            margin: auto;
+        }
+            .navlink {
+                display: block;
+                font-size: 1rem;
+            }
     #sitely {
         display: inline-block;
         height: 11rem;
@@ -72,21 +74,21 @@ nav {
 #neighborhood div {
     flex: 1 1;
     & h3 {
-        display: inline-block;
+            display: inline-block;
         width: 100%;
         text-align: center;
     }
-}
-#webrings {
+        }
+        #webrings {
     height: 16rem;
-    overflow: scroll;
+            overflow: scroll;
     width: 16rem;
     align-content: space-around;
 }
 .textcliq {
     display: block;
     margin: 2px 0;
-    text-align: center;
+            text-align: center;
     object-fit: contain;
     width: 100%;
 }
@@ -117,7 +119,7 @@ h1 {
 
 h3 {
     font-family: 'Spirit';
-}
+        }
 
 
  .left-sidebar {
@@ -170,60 +172,60 @@ footer {
     & a {
         color: #98f8d8;
     }
-}
+    }
 
 /*=============================================
 =          ✦•┈๑⋅⋯ EXTRAS ⋯⋅๑┈•✦            =
 =============================================*/
 
 /*----------  Status Cafe🍵  ----------*/
-#statuscafe {
+        #statuscafe {
     background: var(--color-one);
     border-radius: 10px;
-    padding: .5em;
-    margin: .5em;
-    border-radius: 10px;
-}
-#statuscafe-username {
+            padding: .5em;
+            margin: .5em;
+            border-radius: 10px;
+        }
+        #statuscafe-username {
     font-family: 'PixelPoiz';
     font-size: .9rem;
     color: #161049;
     & a {
         color: #c306b0;
     }
-    margin-bottom: .5em;
-}
-#statuscafe-content {
-    margin: 0 0.8em 0.5em 0.8em;
+            margin-bottom: .5em;
+        }
+        #statuscafe-content {
+            margin: 0 0.8em 0.5em 0.8em;
     font-size: .7rem;
     color: #161049;
-}
+        }
 /*=====  🫖  ======*/
 
 
 /*====  IMood ☺️  =====*/
-#imood {
-    text-align: center;
-    display: block;
-    margin: .2rem auto;
+        #imood {
+            text-align: center;
+            display: block;
+            margin: .2rem auto;
     font-family: 'NugieRomantic';
     font-size: 1rem;
-}
+    }
 
 /*=====  ChatBox💬  ======*/
 #cbox {
     margin: auto;
     height: 200px;
     background-color: #98f8d8;
-}
+    }
 
-
+   
     /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
     scrollbar-width: auto;
     scrollbar-color: #8054c9 #f9c5fc;
-  }
+        }
 
   
   /* Chrome, Edge, and Safari */
@@ -233,13 +235,13 @@ footer {
 
   *::-webkit-scrollbar-track {
     background: #f9c5fc;
-  }
+            }
 
   *::-webkit-scrollbar-thumb {
     background-color: #8054c9;
     border-radius: 10px;
     border: 3px solid #ffffff;
-  }
+        }
   
   ::-moz-selection { /* Code for Firefox */
     color: rgb(255, 77, 202);
@@ -249,7 +251,7 @@ footer {
     ::selection {
         color: rgb(255, 77, 202);
         background: rgb(165, 255, 145);
-    }
+        }
 
     #animalcrossingring {
         margin: 1rem;
