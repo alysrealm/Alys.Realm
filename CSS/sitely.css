@@ -1,0 +1,54 @@
+* {
+    cursor: url('/IMGs/site-about/clamshell.gif'), pointer;
+}
+body {
+    background-image: url('/IMGs/site-about/abalone.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    image-rendering: pixelated;
+    font-family: 'Lora';
+    cursor: url('/IMGs/site-about/clamshell.gif'), auto;
+}
+
+.content {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+header {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: aqua;
+    border: 1px dotted blue;
+    border-radius: 5px;
+    text-align: center;
+    background-image: url();
+    background-size:contain;
+    image-rendering: initial;
+}   
+h1 {
+    font-family: 'Alkhemikal';
+    font-weight: 100;
+    font-size: 3rem;
+    color: rgb(255, 236, 243);
+    text-shadow: 2px 2px 3px rgb(255, 0, 93), -2px 2px 3px rgb(255, 0, 93), -2px -2px 3px rgb(255, 0, 93), 2px -2px 3px rgb(255, 0, 93) ;
+}
+h1:hover {
+    letter-spacing: 6px;
+    transition-duration: 1s;
+    filter: saturate(1.4);
+  }
+.answer {
+    background-color: plum;
+    padding: 1rem;
+}
+@media screen and (max-width: 800px) {
+    :root {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 400px) {
+    :root {
+        font-size: 12px;
+    }
+}
