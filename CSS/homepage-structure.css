@@ -7,14 +7,20 @@
 
 * {box-sizing: border-box;}
 
+  #info {
+    margin-bottom: 2rem;
+  }
+  
 body {
     background-image: url(/IMGs/538695.png);
-    font-family: 'Besley';
-    font-size: .70rem;
+    font-family: 'Lora';
+    font-size: .80rem;
     background-color: var(--color-two);
     color: var(--color-one);
 }
-    
+.filter {
+    filter: sepia(90%) hue-rotate(-80deg) ;
+}
 /*=============================================
 =             Framework/classes              =
 =============================================*/
@@ -35,7 +41,6 @@ body {
 
 .inner-box {
     padding: 1rem;
-    margin: 1rem;
     border: 3px solid var(--color-one);
     border-radius: 5px;
     background-color: var(--color-four);
@@ -255,4 +260,6 @@ footer {
 
     #animalcrossingring {
         margin: 1rem;
-    }
+        font-family: "MS UI Gothic",monospace !important;
+        font-size: 7px !important;
+      }

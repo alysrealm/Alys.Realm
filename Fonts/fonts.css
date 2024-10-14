@@ -1,12 +1,9 @@
 @font-face {
   font-display: swap; 
-  font-family: 'Besley';
-  src: url('/Fonts/besley-regular.woff2') format('woff2'); 
+  font-family: 'Lora';
+  src: url('/Fonts/lora-v35-latin-regular.woff2') format('woff2'); 
 }
-@font-face {
-  font-family: 'LibreFrank';
-  src: url(/Fonts/LibreFranklin-VariableFont_wght.ttf);
-}
+
 @font-face {
   font-family: 'NugieRomantic';
   src: url('/Fonts/NugieRomantic-BEoV.ttf');
