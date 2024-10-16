@@ -10,24 +10,36 @@ body {
     font-family: 'Lora';
     cursor: url('/IMGs/site-about/clamshell.gif'), auto;
 }
-
+.back-btn {
+    position: relative;
+    right: 40%;
+    color: #5bff03;
+}
 .content {
-    max-width: 40rem;
+    max-width: 50rem;
     margin: 0 auto;
 }
 header {
     margin: 1rem;
     padding: 1rem;
-    background-color: aqua;
-    border: 1px dotted blue;
+    background-color: #033b7663;
+    border: 3px dotted rgb(0, 255, 159);
     border-radius: 5px;
     text-align: center;
-    background-image: url();
-    background-size:contain;
-    image-rendering: initial;
+    color: #ffbfec;
 }   
+header p {
+    font-size: 1.2rem;
+}
+main {
+    padding: 1rem;
+    border-radius: 10px;
+    backdrop-filter: hue-rotate(30deg) saturate(149%) blur(1.1px);
+    border: 2px dotted #ffbfec;
+    
+}
 h1 {
-    font-family: 'Alkhemikal';
+    font-family: 'NugieRomantic';
     font-weight: 100;
     font-size: 3rem;
     color: rgb(255, 236, 243);
@@ -38,10 +50,43 @@ h1:hover {
     transition-duration: 1s;
     filter: saturate(1.4);
   }
+  h2 {
+    margin: 0 10px;
+    color: #4f2ccf;
+    background-color: #fefbc8b1;
+    border-radius: 20px;
+    background-size: cover;
+    border-bottom: 3px dotted rgb(132, 9, 56);
+  }
+  h2:before, h2:after {
+    content: url('/IMGs/site-about/shell2.gif');
+  }
 .answer {
     background-color: plum;
     padding: 1rem;
+    border-radius: 20px;
 }
+#flourish {
+    background-image: url('/IMGs/site-about/pearlshell.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 477px;
+    height: 486px;
+    position: fixed;
+    top: 244px;
+    left: 1111px;
+    z-index: -1;
+    transform: rotate(16deg);
+    filter: invert(98%);
+}
+
+hr {
+    border: none;
+    background-image: url(/IMGs/site-about/pearlystars.gif);
+    height: 20px;
+    margin: 2rem 0;
+}
+
 @media screen and (max-width: 800px) {
     :root {
         font-size: 14px;
