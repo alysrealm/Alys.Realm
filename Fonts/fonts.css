@@ -8,7 +8,10 @@
   font-family: 'NugieRomantic';
   src: url('/Fonts/NugieRomantic-BEoV.ttf');
 }
-
+@font-face {
+  font-family: "PatchFun";
+  src: url(/Fonts/PatchFun.ttf);
+}
 @font-face {
   font-family: 'New Rocker';
   src: url('/Fonts/NewRocker-Regular.ttf');
