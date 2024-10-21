@@ -1,4 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;   
+    font-family: 'Lora'; 
+    background-image: url(/IMGs/graphixhoard/bg3-5.png),url(/IMGs/graphixhoard/bg2-1.gif);
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+#wrapper > a:nth-child(1) {
+    position: relative;
+    right: 20rem;
+    }
+#wrapper {
+    background-color: rgb(172, 172, 247);
+    text-align: center;
+    align-self: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
 .gallery {
     max-width: 48vw;
     margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
 }
+h1 {
+    color: rgb(217, 255, 176);
+    text-shadow: 4px 4px 2px #7f0a5c;
+    font-weight: 200;
+    font-size: 3rem;
+    background-color: #4c34f7;
+    padding: 1rem;
+    width: fit-content;
+    margin: 0 auto;
+    filter: drop-shadow(4px 4px #400064);
+}
+h2 {
+    color: #400064;
+    background-color: #e16297;
+    border-radius: 5px;
+    padding: .2rem;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: -1rem;
+}
+hr {
+    width: 100%;
+    border: 1px solid black;
+    margin: 1rem;
+}
+::-moz-selection { /* Code for Firefox */
+    color: rgb(213, 166, 225);
+    background: rgb(115, 202, 93);
+    }
+
+::selection {
+    color: rgb(213, 166, 225);
+    background: rgb(115, 202, 93);
+    }
