@@ -1,0 +1,33 @@
+.gallery img {
+    max-width: 200px;
+    border-radius: 5px;
+    border: 2px solid rgb(232, 113, 178);
+}
+h1 {
+    font-family: "PatchFun";
+    color: #c32043;
+    font-size: 5rem;
+    font-weight: lighter;
+    margin: 0;
+}
+header {
+   text-align: center;
+}
+.wrapper {
+    max-width: 60rem;
+    margin: auto;
+    padding: 1rem;
+    backdrop-filter: saturate(88%) blur(2px) hue-rotate(66deg);
+}
+body {
+    background-image: url('/56292.png');
+}
+#back {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+#back a {
+    background-color: #9e0e2d;
+    color: rgb(255, 182, 238);
+}
