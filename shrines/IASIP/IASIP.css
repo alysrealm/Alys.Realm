@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Textile';
+    src: url(/shrines/IASIP/Textile.ttf);
+}
+header {
+    font-family: 'Textile';
+}
