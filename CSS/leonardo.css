@@ -50,7 +50,7 @@ h2 {
   grid-column: 1;
   list-style: url("/IMGs/leo/heart.gif");
 }
-.dislike {
+.dislikes {
   grid-column: 2;
   list-style: url("/IMGs/leo/angy.gif");
 }

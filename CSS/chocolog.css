@@ -1,5 +1,12 @@
 .choc-box {
-    display: inline-table;
-    table-layout: fixed;
+    display: inline-grid;
+    grid-template-columns: 1fr 3fr;
 }
-.images {}
+.choco-bar {
+
+}
+.images {
+    display: inline-flex;
+    flex-flow: row;
+    max-width: 400px;
+}
