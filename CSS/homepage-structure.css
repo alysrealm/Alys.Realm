@@ -1,8 +1,8 @@
 :root {
     --color-one: #5e0632;
-    --color-two: #c1abd1;
-    --color-four: #9d73cc;
-    --background-color: rgb(123, 147, 123);
+    --color-two: #b3f1be;
+    --color-four: #a7b5fe;
+    --background-color: rgb(177, 165, 252);
 }
 
 * {box-sizing: border-box;}
@@ -11,8 +11,8 @@ body {
     font-family: 'Lora';
     font-size: .80rem;
     background-color: var(--background-color);
-    color: var(--color-one);
-    background-image: url(/4690490.png);
+    color: black;
+    background-image: url(/2772288.png);
 }
 .filter {
    /* filter: sepia(90%) hue-rotate(-80deg) ;*/
@@ -31,6 +31,22 @@ body {
     width: 100%;
 }
 
+h1 {
+    font-family: 'Closetome';
+    font-size: 4.5rem;
+    font-style: italic;
+    color: #22013a;
+    margin: 0;
+    margin-top: 2rem;
+    background-color: #c974d8;
+    background-size: contain;
+    /* Comment
+     text-shadow:
+    1px 2px 1px #620007,
+    2px 2px 0px #340d8e,
+    2px 2px 0px #273a48; */
+}
+
 .left-sidebar, .right-sidebar {
     display: inline-flex;
     flex-flow: column;
@@ -41,12 +57,11 @@ body {
 margin-right: 1rem;
 /* padding: 0rem 1rem;
 width: 14rem; */
-background-color: #98f8d8;
 }
 
 .inner-box {
-    padding: .8rem;
-    border: 3px solid var(--color-one);
+    padding: 1rem;
+    border: 2px solid var(--color-one);
     border-radius: 5px;
     background-color: var(--color-four);
 }
@@ -55,7 +70,9 @@ background-color: #98f8d8;
     border-image-slice: 8 8 9 8;
     border-image-width: 7px 7px 7px 7px;
     border-image-outset: 0px 0px 0px 0px;
-    border-image-repeat: round round; 
+    border-image-repeat: round round;
+    background-color: #8154c94c; 
+    background-clip: padding-box;
 }
 .nav-title {
     padding: .3rem;
@@ -72,6 +89,7 @@ nav {
     text-align: center;
     overflow: none  scroll;
     margin: auto;
+  
 }
 
 .navlink {
@@ -102,9 +120,16 @@ nav h3 {
     margin-bottom: 2rem;
     padding: .6rem 2rem;
     position: relative;    
-    width: 30rem;
     font-size: .8rem;
 }
+#info > ul {
+    margin: 1rem;
+    list-style-position: outside;
+    }
+
+    #info > ul li {
+       margin-bottom: 1rem;
+        }
 #info > div:nth-child(3) {
     width: 100%;
     }
@@ -145,19 +170,6 @@ nav h3 {
 /*=============================================
 =                Page Styling                =
 =============================================*/
-
-h1 {
-    font-family: 'NugieRomantic';
-    font-size: 4.5rem;
-    font-style: italic;
-    color: #ce88ff;
-    margin: 0;
-    margin-top: 2rem;
-    text-shadow:
-    1px 2px 1px #620007,
-    2px 2px 0px #340d8e,
-    2px 2px 0px #273a48;
-}
 
    h2 {
     font-size: 1.6rem;
@@ -223,35 +235,40 @@ footer {
     color: var(--color-one);
     font-weight: 900;
     font-size: .9rem;
-    background-image: url(/IMGs/black-sparkle.gif);
-    background-blend-mode: multiply ;
     & a {color: #98f8d8;}
     }
-    #currently {
-        border: 1px solid purple;
-        border-radius: 2rem;
-        padding-left: .4rem;
-        padding-bottom: .2rem;
-        }
-    #currently > h3:nth-child(1) {
-        border-bottom: 2px dotted rgb(70, 9, 34);
-        padding: .1rem;
-        }
-        #currently > p > span {
-            font-weight: bold;
-            border-bottom: 2px dashed pink;
-            background-color: #faa7ed3b;
-            border-radius: 10px;
-            padding: 2px;
-            margin-right: 4px;
-        }
 
+   
         #featured img {
             height: 200px;
             width: 100%;
         }
+#webmistress {
+    padding: .5rem;
+}
 
-
+#currently {
+    margin: 1rem;
+   }
+#currently {
+    border: 1px solid purple;
+    border-radius: 2rem;
+    padding-left: .4rem;
+    padding-bottom: .2rem;
+    }
+#currently > h3:nth-child(1) {
+    border-bottom: 2px dotted rgb(70, 9, 34);
+    padding: .1rem;
+    }
+    #currently > p > span {
+        font-weight: bold;
+        border-bottom: 2px dashed pink;
+        background-color: #faa7ed3b;
+        border-radius: 10px;
+        padding: 2px;
+        margin-right: 4px;
+    }
+    
 
 
 
@@ -303,9 +320,7 @@ footer {
     height: 200px;
     }
 
-   #currently {
-    margin: 1rem;
-   }
+   
     /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
