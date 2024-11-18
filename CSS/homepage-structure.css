@@ -27,8 +27,13 @@ body {
     text-align: center;
     margin: 0;
     margin-bottom: 1.5rem;
-    height: 8rem;
-    width: 100%;
+    width: 90%;
+    background-color: #f78ff53d;
+    background-image: url(/z15-heart-line.gif);
+    background-repeat: repeat-x;
+    background-position-y: top;
+    border: 4px solid #93f99bcc;
+    border-radius: 25px;
 }
 
 h1 {
@@ -38,14 +43,30 @@ h1 {
     color: #22013a;
     margin: 0;
     margin-top: 2rem;
-    background-color: #c974d8;
-    background-size: contain;
-    /* Comment
-     text-shadow:
-    1px 2px 1px #620007,
-    2px 2px 0px #340d8e,
-    2px 2px 0px #273a48; */
+    text-shadow: 2px 2px 3px #93f99bcc;
 }
+
+/* Header Orchids */
+h1::before, h1::after {
+    display: inline-block;
+    width: 100px;
+    min-height: 72px;
+    background-image: url(/purplespots.png);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: 55% 55%;
+    content: "";
+}
+/********/
+
+header > span {
+    font-family: 'Lora';
+    font-style: italic;
+    letter-spacing: 1.2px;
+    margin: 2rem;
+    margin-top: 0;
+}
+
 
 .left-sidebar, .right-sidebar {
     display: inline-flex;
@@ -53,10 +74,16 @@ h1 {
     align-items: center;
 }
 
+.right-sidebar {
+    background-color: #22013a;
+    background-image: url(/80x80th_cloud1b.gif);
+    background-size: ;
+    background-repeat: repeat-x;
+}
+
 .left-sidebar {
 margin-right: 1rem;
-/* padding: 0rem 1rem;
-width: 14rem; */
+
 }
 
 .inner-box {
@@ -66,13 +93,14 @@ width: 14rem; */
     background-color: var(--color-four);
 }
 .title-box  {
-    border-image: url(/tumblr_89de70eec825ee1ef0780e569afe88ce_c069ddd3_100.png);
+    border-image: url(/small-lace.png);
     border-image-slice: 8 8 9 8;
     border-image-width: 7px 7px 7px 7px;
-    border-image-outset: 0px 0px 0px 0px;
+    border-image-outset: 4px 4px 4px 4px;
     border-image-repeat: round round;
     background-color: #8154c94c; 
     background-clip: padding-box;
+    box-shadow: 0 0 8px rgb(251, 213, 251);                   
 }
 .nav-title {
     padding: .3rem;
@@ -245,6 +273,7 @@ footer {
         }
 #webmistress {
     padding: .5rem;
+    margin: 1rem;
 }
 
 #currently {
