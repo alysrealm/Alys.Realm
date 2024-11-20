@@ -2,6 +2,9 @@
     --color-one: #5e0632;
     --color-two: #b3f1be;
     --color-four: #a7b5fe;
+    --lightgreen: #93f99bcc;
+    --dark-purple: #22013a;
+    --light-pink:  rgb(223, 172, 249);
     --background-color: rgb(177, 165, 252);
 }
 
@@ -29,10 +32,10 @@ body {
     margin-bottom: 1.5rem;
     width: 90%;
     background-color: #f78ff53d;
-    background-image: url(/z15-heart-line.gif);
+    background-image: url(/IMGs/z15-heart-line.gif);
     background-repeat: repeat-x;
     background-position-y: top;
-    border: 4px solid #93f99bcc;
+    border: 4px solid var(--lightgreen);
     border-radius: 25px;
 }
 
@@ -40,10 +43,10 @@ h1 {
     font-family: 'Closetome';
     font-size: 4.5rem;
     font-style: italic;
-    color: #22013a;
+    color: var(--dark-purple);
     margin: 0;
     margin-top: 2rem;
-    text-shadow: 2px 2px 3px #93f99bcc;
+    text-shadow: 2px 2px 3px var(--lightgreen);
 }
 
 /* Header Orchids */
@@ -51,7 +54,7 @@ h1::before, h1::after {
     display: inline-block;
     width: 100px;
     min-height: 72px;
-    background-image: url(/purplespots.png);
+    background-image: url(/IMGs/purplespots.png);
     background-size: 80px;
     background-repeat: no-repeat;
     background-position: 55% 55%;
@@ -75,9 +78,10 @@ header > span {
 }
 
 .right-sidebar {
-    background-color: #22013a;
-    background-image: url(/80x80th_cloud1b.gif);
-    background-size: ;
+    background-color: var(--dark-purple);
+    background-image: url(/IMGs/80x80th_cloud1b.gif);
+    border: 2px solid var(--light-pink);
+    background-size: 60px;
     background-repeat: repeat-x;
 }
 
@@ -88,12 +92,12 @@ margin-right: 1rem;
 
 .inner-box {
     padding: 1rem;
-    border: 2px solid var(--color-one);
+    border: 2px solid var(--dark-purple);
     border-radius: 5px;
     background-color: var(--color-four);
 }
 .title-box  {
-    border-image: url(/small-lace.png);
+    border-image: url(/IMGs/small-lace.png);
     border-image-slice: 8 8 9 8;
     border-image-width: 7px 7px 7px 7px;
     border-image-outset: 4px 4px 4px 4px;
