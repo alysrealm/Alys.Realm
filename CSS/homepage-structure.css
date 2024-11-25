@@ -304,14 +304,21 @@ nav h3 {
         margin-right: 4px;
     }
 
+/*=============================================
+=                   Footer                   =
+=============================================*/
+
     footer {
         height: fit-content;
         font-family: 'MS Gothic';
         color: var(--color-one);
-        font-weight: 900;
-        font-size: .9rem;
+        font-weight:bold;
         width: 100%;
         & a {color: #98f8d8;}
+        }
+        .footer > p:nth-child(2) {
+            font-size: 1rem;
+            margin-top: 3rem;
         }
     
 
@@ -320,7 +327,8 @@ nav h3 {
     flex-flow: row;
     padding: 1rem;
     margin: 1rem;    
-   
+    justify-content: space-around;
+    background-color: var(--dark-purple)
 }
 
 /*=============================================
