@@ -14,7 +14,7 @@
 body {
     font-family: 'Lora';
     font-size: .80rem;
-    background-image: url('/4289905.png');
+    background-image: url('/IMGs/sprites.png');
     background-attachment: fixed;
 }
 body,html {
@@ -356,7 +356,7 @@ nav h3 {
         & a {color: #b9ffc8;}
 }
 #statuscafe-username a::before {
-    content: url('/skull3.gif');
+    content: url('/IMGs/skull3.gif');
     padding-right: 6px;
 }
 #statuscafe-content {
