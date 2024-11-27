@@ -418,6 +418,7 @@ nav h3 {
         }
 
     #animalcrossingring {
+        display: inline-block;
         margin: 1rem;
         font-family: "MS UI Gothic",monospace !important;
         font-size: 7px !important;
