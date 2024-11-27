@@ -1,0 +1,37 @@
+* {
+    cursor: url('/IMGs/updates/frog-cursor.gif') ,auto;
+}
+#wrapper {
+    max-width: 48rem;
+    margin-left: 2rem;
+    background-color: rgba(168, 255, 127, 0.507);
+    padding: 1rem;
+    overflow: scroll;
+}
+h1 {
+    font-family: 'Organical';
+    font-size: 3rem;
+    margin-top: 0;
+    color: rgb(24, 41, 0);
+}
+body {
+    font-family: 'Lora';
+    background-image: url('/IMGs/updates/frog.jpg');
+    background-size: cover;
+}
+a {
+    color: rgb(85, 31, 0);
+    background-color: rgb(222, 255, 100);
+}
+p {
+    background-color: rgb(255, 250, 202);
+}
+::-moz-selection { /* Code for Firefox */
+    color: green;
+    background: chartreuse;
+    }
+
+    ::selection {
+        color: green;
+        background: chartreuse;
+        }
