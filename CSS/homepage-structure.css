@@ -422,4 +422,7 @@ nav h3 {
         margin: 1rem;
         font-family: "MS UI Gothic",monospace !important;
         font-size: 7px !important;
+        & h2 {
+            font-size: .69rem;
+        }
       }
