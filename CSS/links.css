@@ -1,48 +1,84 @@
  :root {
     font-size: 16px;
+    --bg-color: rgb(70, 71, 158);
+}
+* {
+    cursor: url('/IMGs/greenbow.png'), auto !important;
+    cursor: url('/IMGs/greenbow.png') pointer !important;
 }
 body {
     display: flex;
     flex-direction: column;
 /* style */
-    background-image: url('/5633777.png');
+    background-image: URL('/sa03-bg-grid.gif');
     background-attachment: fixed;
-    cursor: url('/IMGs/greenbow.png'), auto !important;
-    cursor: url('/IMGs/greenbow.png') pointer !important;
-    font-family: 'Basiic'
+    background-color: #f35489;
+ 
+    font-family: 'Basiic';
+ 
 }
 header {
-    margin: 0 auto;
+    margin: 1.5rem auto 0;
+    width: 48rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: 1rem;
+    background-image: url('/______heart_back_ground.gif');
+   background-blend-mode: overlay;
 }
-h1 {
-    display: inline-block;
-}
-nav {
 
+nav {
+    display: inline-flex;
+}
+header details {
+    margin: 10px;
+}
+header details a {
+    display: inline-block;
+  border: 1px dashed;
+  padding: 3px 5px 2px 5px;
+  margin: 5px 1px;
+  text-decoration: none;
 }
 
 main {
-    width: 38rem;
     padding: 3rem;
     margin: 0 auto;
     overflow-y: scroll;
     overflow-x: hidden;
     font-size: 1.2rem;
 }   
-section {
-    border: 1px solid black;
-    background-color: palegoldenrod;
-    padding: 1rem;
+header, section {
+    background-color: var(--bg-color);
+    border: 4px solid #e61da9;
+    outline: 4px solid rgb(198, 117, 252);
+}
+section {   
+    padding: 1.25rem;
     margin-bottom: 3rem;
+    width: 46rem;
+    display: grid;
+    justify-content: center;
+    color: #f887c9;
 }
 
 h1 {
     font-family: 'Spirit';
-    color:#a8ff89;
-    text-shadow: -3px 2px 3px #5d00ff;
+    color:#fdd1ff;
+    text-shadow: -3px 2px 3px #f35489;
     font-size: 3rem;
     font-style: italic;
-    font-weight: 200;
+    font-weight: 200;   
+    display: inline-block;
+}
+h2 {
+    color:#fedaff;
+    text-shadow: 1px 2px 1px #ff00bf;
+    text-align: center;
+}
+h3 {
+    margin-left: 1rem;
+    border-bottom: 2px dotted #3cff35;
 }
 hr {
     height: 4rem;
@@ -51,20 +87,34 @@ hr {
     border: none;
 }
 
-
-a:link {
-    color: #5d00ff;
-    text-decoration: underline;
-    font-weight: bolder;
+.buttons {
+    width: 66%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;  
+    align-self: center;
+}
+a {
+    font-weight: bold;
+    color: #3cff35;
 }
 
-a:visited {
-    color: #440083;
+ section a:visited {
+    color: #ff00bf;
 }
 
 a:hover {
-    background-color: #ff97c2;
-    font-size: 20px;
+    background-color: #f887c9;
+}
+
+@media (max-width:700px) {
+    
+}
+
+@media (max-width:500px) {
+    :root {
+        font-size: 13px;
+    }
 }
 
 /* ~~~~fun stuff~~~~ */

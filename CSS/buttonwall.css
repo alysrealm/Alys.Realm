@@ -1,7 +1,3 @@
-
-/*=============================================
-=                  STRUCTURE                 =
-=============================================*/
 :root {font-size: 16px;}
 
 * { 
@@ -16,15 +12,17 @@ body {
     background-image: url('/1175552.png ');
     background-attachment: fixed;
     font-family: 'MSPgothic';
-    font-size: 1rem; }
-
+    font-size: 1rem; 
+    }
+header {
+    text-align: center;
+    width: 30rem;
+}
 main {
     display: inline-flex;
     flex-direction: column; 
     max-width: 42rem;
-    height: 100vh;
     overflow: scroll;
-    position: fixed;
     padding: 2rem;
     align-items: center;
     background-color: #d6afff;
@@ -38,9 +36,6 @@ footer {
     padding: .625em;
 }
 
-/*=====  End of Structure CSS  ======*/
-
-
 h1 {
     font-family: 'Spirit';
     font-size: 3rem;
@@ -48,6 +43,7 @@ h1 {
     font-weight: 100;
     margin-bottom: -.5rem;
 }
+
 h3 {
     font-family: 'Basiic';
 }
