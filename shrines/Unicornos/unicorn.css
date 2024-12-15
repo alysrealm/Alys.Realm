@@ -11,9 +11,11 @@
 }
 body {
     font-family: 'MS Gothic';
+    color: rgb(56, 0, 82);
     display: flex;
     flex-direction: column;
-    background-color: #ffacc8;
+    background: rgb(255,179,250);
+    background: linear-gradient(180deg, rgba(255,179,250,1) 0%, rgba(255,231,205,1) 73%, rgba(190,255,254,1) 100%); 
   }
 header {
   display: grid;
@@ -26,6 +28,12 @@ header {
   align-items:center;
   border: 4px solid #ff0098;
   border-radius: 4rem;
+}
+header img {
+  position: relative;
+  bottom: 30px;
+  width: 80%;
+  margin: 0 auto;
 }
 h1 {
   font-family: 'Billo';
@@ -47,26 +55,43 @@ h2 {
   border-radius: 2rem;
   border: 2px dotted rgb(154, 2, 255);
 }
+
 main {
-display: inline-flex;
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 66rem;
+  margin: 0 auto;
+}
+.wrapper {
+  display: inline-flex;
 flex-direction: column;
 justify-content: center;
 }
-.wrapper {
-  width: 66rem;
+.wrapper > main:nth-child(2) > div:nth-child(4) {
+  max-width: 500px;
   margin: 0 auto;
 }
+
 .text-box {
-  display: inline-flex;
   padding: 2rem;
+  margin: 1rem;
+  border: 2px dotted red;
+  border-radius: 25px;
+  box-shadow: 0 0 4px rgb(233, 143, 255);
+
 }
+.toy-box {
+  display: inline-flex;
+flex-direction: column;
+align-items: center;
+margin: 1rem;
+}
+
 .gallery {
-  width: 60rem;
-  margin: 0 auto;
-  background-color: #aafcffe3;
-  padding: 1rem;
-  flex: auto;
+  display: inline-flex;
+  flex-direction: row wrap;
 }
+
 .gallery img {
   max-width: 300px;
   margin: 2px;
@@ -80,7 +105,6 @@ a , a:visited {
 @media (max-width: 945px) {
   :root {font-size: 12px;}
 }
-
 
 /* ~~~~fun stuff~~~~ */
 ::-moz-selection { /*Firefox */
