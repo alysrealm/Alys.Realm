@@ -11,20 +11,18 @@
 }
 * {box-sizing: border-box;}
 
+body,html {
+    margin:0;
+    padding:0;
+  }
+  
 body {
     font-family: 'Lora';
     font-size: .80rem;
     background-image: url('/IMGs/sprites.png');
     background-attachment: fixed;
 }
-body,html {
-  margin:0;
-  padding:0;
-}
 
-/*=============================================
-=             Framework/classes              =
-=============================================*/
 .wrapper {
     background-color: var(--background-color);
     padding: 0 2rem;
@@ -55,7 +53,9 @@ h1 {
     margin-top: 2rem;
     text-shadow: 2px 2.5px 3px var(--lightgreen);
 }
-
+h2 {
+    font-size: 1.6rem;
+}
 /* Header Orchids */
 h1::before, h1::after {
     display: inline-block;
@@ -73,7 +73,6 @@ header > p {
     font-family: 'Lora';
     font-style: italic;
     letter-spacing: 1.2px;
-    
 }
 
 
@@ -193,12 +192,13 @@ nav h3 {
     text-align: center;
 }
         
-    #webrings {
-        height: 16rem;
-        overflow: scroll;
-        width: 16rem;
-        align-content: space-around;
-    }
+#webrings {
+    height: 16rem;
+    overflow: scroll;
+    width: 16rem;
+    margin: auto;
+    align-content: space-around;
+}
 
 .textcliq {
     display: block;
@@ -209,15 +209,7 @@ nav h3 {
 }
 /*=====  End of Neighborhood  ======*/
 
-/*=============================================
-=                Page Styling                =
-=============================================*/
-
-   h2 {
-    font-size: 1.6rem;
-}
-
-
+   
 #button {
     margin: auto;
     width: 9rem;
@@ -270,13 +262,10 @@ nav h3 {
 #piclog img {
     max-width: 180px;
 }
-
-
-   
-        #featured img {
-            height: 200px;
-            width: 100%;
-        }
+#featured img {
+    height: 200px;
+    width: 100%;
+}
 #webmistress {
     padding: .5rem;
     margin: 1rem;
@@ -308,20 +297,18 @@ nav h3 {
 =                   Footer                   =
 =============================================*/
 
-    footer {
-        height: fit-content;
-        font-family: 'MS Gothic';
-        color: var(--color-one);
-        font-weight:bold;
-        width: 100%;
-        & a {color: #98f8d8;}
-        }
-        .footer > p:nth-child(2) {
-            font-size: 1rem;
-            margin-top: 3rem;
-        }
-    
-
+footer {
+    height: fit-content;
+    font-family: 'MS Gothic';
+    color: var(--color-one);
+    font-weight:bold;
+    width: 100%;
+    & a {color: #98f8d8;}
+    }
+    .footer > p:nth-child(2) {
+        font-size: 1rem;
+        margin-top: 3rem;
+}
 #bottom-ads {
     display: inline-flex;
     flex-flow: row;
@@ -330,7 +317,6 @@ nav h3 {
     justify-content: space-around;
     background-color: var(--dark-purple)
 }
-
 /*=============================================
 =          ✦•┈๑⋅⋯ EXTRAS ⋯⋅๑┈•✦            =
 =============================================*/
@@ -376,53 +362,50 @@ nav h3 {
     font-family: 'NugieRomantic';
     font-size: 1rem;
 }
-
 /*=====  ChatBox💬  ======*/
 #cbox {
     margin: auto;
     height: 200px;
     }
-
-   
-    /* ===== Scrollbar CSS ===== */
+/* ===== Scrollbar CSS ===== */
   /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #8054c9 #f9c5fc;
+* {
+scrollbar-width: auto;
+scrollbar-color: #8054c9 #f9c5fc;
+    }
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+background: #f9c5fc;
         }
 
-  
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
+*::-webkit-scrollbar-thumb {
+background-color: #8054c9;
+border-radius: 10px;
+border: 3px solid #ffffff;
+    }
 
-  *::-webkit-scrollbar-track {
-    background: #f9c5fc;
-            }
+/*----------  Selection Color  ----------*/
+::-moz-selection { 
+color: var(--pink);
+background: var(--lightgreen);
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #8054c9;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
-        }
-  
-  ::-moz-selection { /* Code for Firefox */
-    color: var(--pink);
+::selection {
+    color:  var(--pink);
     background: var(--lightgreen);
     }
 
-    ::selection {
-        color:  var(--pink);
-        background: var(--lightgreen);
-        }
-
-    #animalcrossingring {
-        display: inline-block;
-        margin: 1rem;
-        font-family: "MS UI Gothic",monospace !important;
-        font-size: 7px !important;
+#animalcrossingring {
+    display: inline-block;
+    margin: 1rem;
+    font-family: "MS UI Gothic",monospace !important;
+    font-size: 7px !important;
         & h2 {
             font-size: .69rem;
         }
-      }
+    }
