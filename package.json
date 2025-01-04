@@ -1,0 +1,22 @@
+{
+  "name": "alys-realm",
+  "private": true,
+  "version": "1.0.0",
+  "description": "alys' lovely realm <3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alysson",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "github.com/alysrealm/Alys.Realm"
+  },
+  "keywords": [
+    "fairy"
+  ],
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

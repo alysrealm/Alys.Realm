@@ -3,14 +3,7 @@
 	--main-transparent: rgba(242, 88, 193, 0.24);
 	--main-small-text-color: rgba(0, 0, 0, .65);
 }
-@media (prefers-color-scheme: dark) {
-	:root {
-		--main-text-color: white;
-		--main-bg-color: #1b1b1b;
-		--main-transparent: rgba(255, 255, 255, .15);
-		--main-small-text-color: rgba(255, 255, 255, .45);
-	}
-}
+
 
 body {
 	line-height: 1.6rem;
@@ -18,10 +11,10 @@ body {
 	font-family: 'Lora';
 	color: var(--main-text-color);
 	padding-left: calc(100vw - 100%);
-	background-image: url(/blog/images/sunsetbg.png);
+	background-image: url(/blog/images/AHTATHHP.jpg);
+	background-size: contain;
 	background-attachment: fixed;
-	background-size: cover;
-}
+	}
 
 
 h1 {
@@ -30,7 +23,6 @@ h1 {
 	font-size: 2.00rem;
 	font-weight: bold;
 	font-family: 'Romance';
-	color: #ffb0ce;
 }
 
 
@@ -87,7 +79,7 @@ blockquote {
 	margin-right: 0;
 }
 hr {
-	border-bottom: 6px double rgb(144, 2, 94);
+	border-bottom: 3px solid rgb(247, 63, 109);
 }
 code {
 	background: var(--main-transparent);
@@ -104,10 +96,10 @@ small {
 	color: #ffb0ce;
 }
 header a {
-	color:#ffb0ce;
+	color:#f8005f;
 }
 a {
-	
+	color: #f8005f;
 }
 #header ul {
 	list-style-type: none;
@@ -121,12 +113,8 @@ a {
 	margin: 3em auto;
 	width: 90%;
 	  max-width: 700px;
-	  background: rgb(255,223,254);
-	  background: linear-gradient(0deg, rgba(255,223,254,1) 0%, rgba(223,141,193,1) 49%, rgba(203,92,157,1) 64%, rgba(126,0,0,1) 100%); 
-	  color: #460622;
-	  outline-offset: 1px;
-	  outline: 5px dotted black;
-	  border: 5px solid #bbd6ff;
+	  background: rgb(255, 159, 252);
+	  border: 5px solid #951c99;
 	  border-radius: 10px;
 	  }
 

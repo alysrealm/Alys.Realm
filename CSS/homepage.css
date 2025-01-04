@@ -1,13 +1,13 @@
 :root {
+    font-size: 16px;
     --color-one: #5e0632;
-    --color-two: #f0b1d3;
+    --color-two: #7f5988;
     --periwinkle: #baa7fe;
-    --lightgreen: #93f99bcc;
+    --lightgreen: #f993ebcc;
     --dark-purple: #2a013a;
     --light-pink:  rgb(223, 172, 249);
     --dark-red: #941c4e;
     --pink: #f78ff5;
-    --background-color: rgb(162, 101, 202);
 }
 * {box-sizing: border-box;}
 
@@ -18,89 +18,70 @@ body,html {
   
 body {
     font-family: 'Lora';
-    font-size: .80rem;
-    background-image: url('/gradient.png');
-    background-attachment: fixed;
+    font-size: .9rem;
 }
 
-.wrapper {
-    background-color: var(--background-color);
-    padding: 0 2rem;
-    outline: 6px solid var(--pink);
-    border-left: 3px solid black;
-    border-right: 3px solid black;
+.container {
+    display: flex;
+    flex-flow: column;
+    padding: 0 .4rem;
+    margin: 0 auto;
+    outline: 2px solid black;
+    max-width: 66rem;
 }
-.wrap-width {max-width: 70vw;}
+.container div {
+    border: 1px solid red;
+}
 
 .header {
     text-align: center;
-    margin: 1.5rem;
-    width: 71.125rem;
-    background-color: #f78ff5;
+    margin: 1.5rem 0;
+    width: 100%;
+    height: 10rem;
+    background-color: #d35e8b;
     background-image: url(/IMGs/z15-heart-line.gif);
     background-repeat: repeat-x;
     background-position-y: top;
-    border: 4px solid var(--lightgreen);
-    border-radius: 25px;
 }
 
-h1 {
-    font-family: 'Closetome';
-    font-size: 4.5rem;
-    font-style: italic;
-    color: var(--dark-purple);
-    margin: 0;
-    margin-top: 2rem;
-    text-shadow: 2px 2.5px 3px var(--lightgreen);
+    h1 {
+        font-family: 'Closetome';
+        font-size: 4rem;
+        font-style: italic;
+        color:#49061B;
+        margin: 0;
+        margin-top: 2rem;
+        text-shadow: 2px 2.5px 3px var(--lightgreen);
+    }
+    header > p {
+        font-family: 'Lora';
+        font-style: italic;
+        letter-spacing: 1.2px;
+    }
+
+main {
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 54rem;
 }
 h2 {
     font-size: 1.6rem;
 }
-/* Header Orchids */
-h1::before, h1::after {
-    display: inline-block;
-    width: 100px;
-    min-height: 72px;
-    background-image: url(/IMGs/purplespots.png);
-    background-size: 80px;
-    background-repeat: no-repeat;
-    background-position: 55% 55%;
-    content: "";
-}
-/********/
 
-header > p {
-    font-family: 'Lora';
-    font-style: italic;
-    letter-spacing: 1.2px;
-}
-
-
-.left-sidebar, .right-sidebar {
+.left-sidebar {
     display: inline-flex;
     flex-flow: column;
     align-items: center;
+    margin-right: 1rem;           
+    width: 12rem;                                                                                                                        
 }
 
-.right-sidebar {
-    background-color: var(--dark-purple);
-    background-image: url(/IMGs/80x80th_cloud1b.gif);
-    border: 2px solid var(--light-pink);
-    background-size: 60px;
-    background-repeat: repeat-x;
-}
-
-.left-sidebar {
-margin-right: 1rem;                                                                                                                                   
-}
-
-.inner-box {
-    padding: 1rem;
+.box {
     border: 2px solid var(--dark-purple);
-    border-radius: 5px;
     background-color: var(--color-two);
 }
-.title-box  {
+
+/* .navbox  {
     border-image: url(/IMGs/small-lace.png);
     border-image-slice: 8 8 9 8;
     border-image-width: 7px 7px 7px 7px;
@@ -109,23 +90,22 @@ margin-right: 1rem;
     background-color: #a9ffbf; 
     background-clip: padding-box;
     box-shadow: 0 0 9px rgb(255, 136, 195);                   
-}
-.nav-title {
-    padding: .3rem;
-    margin-bottom: .2rem;
-    font-size: 2rem;
-    margin-top: .8rem;
-    margin-left: .6rem;
-    color: rgb(255, 0, 128);
-}
+} */
+
 nav {
     display: inline-block;
     width: 12rem;
-    padding: 1rem;
+    padding: .1rem;
     text-align: center;
     overflow: none  scroll;
-    margin: auto;
-  
+    & h2 {
+        padding: .3rem;
+        margin-bottom: .2rem;
+        margin-top: .8rem;
+        margin-left: .6rem;
+        color: rgb(255, 124, 189);
+        font-size: 1.3rem;
+    }  
 }
 
 .navlink {
@@ -144,58 +124,58 @@ nav {
     font-style: italic;
     color: rgb(223, 172, 249); 
 }
-
 .navlink:hover {
     text-shadow: 0px 1px 3px rgb(249, 191, 255);
     filter: drop-shadow(1px 3px 2px #342fd4);
 }
 
-div.row:nth-child(1) { /*Info and Webmistress container*/
-    
-  }
-  
+
 #info {
-    margin-bottom: 2rem;
     padding: .6rem 2rem;
-    position: relative;    
-    width: 36rem;
-    
+    margin: 0 .2rem;
+    max-width: 32rem;
 }
 #info > ul {
     margin-right: 3rem;
     list-style-position: outside;
+    & li {margin-bottom: 1rem;}
     }
 
-    #info > ul li {
-       margin-bottom: 1rem;
-        }
-        #webmistress {
-            padding: .5rem;
-        }
-        
-        #currently {
-            margin: .2rem;
-            border: 1px solid purple;
-            padding-left: .4rem;
-            padding-bottom: .2rem;
-            }
-        #currently > h3:nth-child(1) {
-            border-bottom: 2px dotted rgb(70, 9, 34);
-            padding: .1rem;
-            }
-            #currently > p > span {
-                font-weight: bold;
-                padding: 2px;
-                margin-right: 4px;
-                font-family: 'Basiic';
-            }
+#webmistress {
+    padding: .5rem;
+    margin: 0 .1rem;
+    width: 24rem;
+    align-items: center;
+}
+
+/* Currently */
+#currently {
+    margin: .2rem;
+    border: 1px solid purple;
+    padding: 0rem .3rem .2rem .4rem;
+    font-size: .8rem;
+    
+    }
+#currently > h3:nth-child(1) {
+    border-bottom: 2px dotted rgb(70, 9, 34);
+    padding: .1rem;
+    font-family: 'Basiic';
+    }
+    #currently > p > span {
+        font-weight: bold;
+        padding: 2px;
+        margin-right: 4px;
+        font-family: 'Basiic';
+        border-bottom: 2px dotted black;
+    }
 
 /*=====  Neighborhood  ======*/
 #neighborhood {
-    max-height: 20rem;
+    max-height: 24rem;
+    max-width: 50rem;
     display: inline-flex;
     padding: 1.8rem;
-    margin: 1rem;
+    margin: 1rem auto;
     @media (max-width: 800px) 
         {flex-direction: column;
         max-height: max-content;}
@@ -281,11 +261,12 @@ div.row:nth-child(1) { /*Info and Webmistress container*/
 #piclog img {
     max-width: 180px;
 }
-#featured img {
-    height: 200px;
-    width: 100%;
-}
 
+/* Comment */
+
+.fancy {
+
+}
 
 /*=============================================
 =                   Footer                   =
@@ -293,24 +274,23 @@ div.row:nth-child(1) { /*Info and Webmistress container*/
 
 footer {
     height: fit-content;
-    font-family: 'MS Gothic';
-    color: var(--color-one);
-    font-weight:bold;
+    font-family: 'Basiic';
+    font-weight: bold;
+    font-size: 1.18rem;
     width: 100%;
-    & a {color: #98f8d8;}
-    }
-    .footer > p:nth-child(2) {
-        font-size: 1rem;
-        margin-top: 3rem;
+    & a {color: #ff0062;}
 }
-#bottom-ads {
-    display: inline-flex;
-    flex-flow: row;
-    padding: 1rem;
-    margin: 1rem;    
-    justify-content: space-around;
-    background-color: var(--dark-purple)
-}
+
+@media (max-width: 1201px) {
+    :root {font-size: 15px;}
+  }
+  @media (min-width: 1024px) {  /* css code here */}
+  @media (min-width: 768px) {  /* css code here */}
+  @media (min-width: 480px) {  /* css code here */}
+  @media (min-width: 320px) {  /* css code here */}
+
+
+  
 /*=============================================
 =          ✦•┈๑⋅⋯ EXTRAS ⋯⋅๑┈•✦            =
 =============================================*/
@@ -319,22 +299,25 @@ footer {
 #statuscafe {
     border-radius: 10px;
     margin: .5em;
-    border: 1px solid purple;
+    border-image: url(/IMGs/small-lace.png);
+    border-image-slice: 8 8 9 8;
+    border-image-width: 7px 7px 7px 7px;
+    border-image-outset: 4px 4px 4px 4px;
+    border-image-repeat: round round;
 }
 
 #statuscafe-username {
-    font-family: 'PixelPoiz';
+    font-family: 'Basiic';
     font-size: .9rem;
-    padding: .5em;
+    padding: .5rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    color: #b9ffc8;
-    background-color: var(--dark-red);
-        & a {color: #b9ffc8;}
+    color: #ff2dff;
+        & a {color: #ff2dff;
+        text-decoration: wavy underline;}
 }
 
 #statuscafe-content {
-    margin: 0 0.8em 0.5em 0.8em;
     font-size: .86rem;
     color: #161049;
     padding: 1rem;
@@ -347,7 +330,7 @@ footer {
     text-align: center;
     display: block;
     margin: .2rem auto;
-    font-family: 'NugieRomantic';
+    font-family: 'Basiic';
     font-size: 1rem;
 }
 /*=====  ChatBox💬  ======*/

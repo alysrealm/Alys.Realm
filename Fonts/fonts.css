@@ -61,9 +61,9 @@
 
   @font-face {
     font-family:"Igiari";
-    src: url('/Fonts/Igiari.woff')   
+    src: url('/Fonts/Igiari.woff');   
 }
 @font-face {
   font-family:"Closetome";
-  src: url('/Fonts/CLOSM___.TTF')   
+  src: url('/Fonts/CLOSM___.TTF');   
 }
