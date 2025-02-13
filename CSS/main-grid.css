@@ -1,22 +1,28 @@
 
-.wrapper {
+.container {
     display: grid;
     gap: 16px;
     grid-template:
       "header header header"
-      "left-sidebar main right-sidebar"
-      "footer footer footer"
-      / 1fr 4fr 1fr;
+      "nav info update"
+      "nav info webm"
+      "piclog cbox webm"
+      "nbh nbh nbh"
+      "footer footer footer "
+      / 1fr 4fr 3fr ;
       justify-content: space-around;
       justify-items: center;
       align-content: stretch;
-      margin: 0 auto;
   }
 
     header { grid-area: header; }
-    aside .left-sidebar { grid-area: left-sidebar; }
-    aside .right-sidebar { grid-area: right-sidebar; }
-    main { grid-area: main; }
+    nav {grid-area: nav;}
+    #info {grid-area: info;}
+    #neighborhood {grid-area: nbh;}
+    #webmistress {grid-area: webm;}
+    #cbox {grid-area: cbox;}
+    #piclog {grid-area: piclog;}
+    #updates {grid-area: update;}
     footer { grid-area: footer; }
 
                                                                                                             
@@ -37,35 +43,30 @@
 
 }
 
-    @media (max-width: 800px) {
+    @media (max-width: 400px) {
         :root {font-size: 11px;}
 
-        .wrapper {
+        .container {
             grid-template:
             "header"
-            "main"
-            "left-sidebar"
-            "right-sidebar"
+            "nav"
+            "info"
+            "update"
+            "webm"
+            "nbh"
+            "cbox"
+            "piclog"
             "footer"
             / 1fr;
+            max-width: 100%;
+            overflow-x: none;
+            margin: 0;
+        }
+        .wrapper div {
+            max-width: 90vw;
         }
       }
 
-    @media (max-width: 800px)  {
-        .wrapper {
-            max-width: 100%;
-            overflow-x: none;
-        }
-                .wrapper div {
-            max-width: 90vw;
-        }
-        main {
-            width: 80vw;
-        }
-        .left-sidebar, .right-sidebar {
-            max-width: 90vw;
-    } 
-}
 @media (min-width: 100px) {
     main > div {
         margin: 0 auto;

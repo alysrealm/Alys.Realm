@@ -19,6 +19,7 @@
         border: 4px solid #9ea74d;
         padding: 1rem;
         color: rgb(216, 244, 255);
+        overflow: scroll;
     }
 
     .content {

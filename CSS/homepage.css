@@ -1,13 +1,5 @@
 :root {
     font-size: 16px;
-    --color-one: #5e0632;
-    --color-two: #7f5988;
-    --periwinkle: #baa7fe;
-    --lightgreen: #f993ebcc;
-    --dark-purple: #2a013a;
-    --light-pink:  rgb(223, 172, 249);
-    --dark-red: #941c4e;
-    --pink: #f78ff5;
 }
 * {box-sizing: border-box;}
 
@@ -18,41 +10,44 @@ body,html {
   
 body {
     font-family: 'Lora';
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .container {
-    display: flex;
-    flex-flow: column;
-    padding: 0 .4rem;
+    max-width: 68rem;
+    padding: 0 1rem;
     margin: 0 auto;
-    outline: 2px solid black;
-    max-width: 66rem;
+    background: rgb(255,223,254);
+    background: linear-gradient(0deg, rgba(255,223,254,1) 0%, rgba(223,141,193,1) 49%, rgba(203,92,157,1) 64%, rgba(126,0,0,1) 100%); 
 }
-.container div {
+ .container div {
     border: 1px solid red;
-}
-
-.header {
+    background: rgb(255,228,240);
+    background: radial-gradient(circle, rgba(255,228,240,1) 0%, rgba(233,148,193,1) 100%); 
+ }
+header {
+    display: inline-flex;
+    flex-direction: column;
     text-align: center;
     margin: 1.5rem 0;
-    width: 100%;
-    height: 10rem;
-    background-color: #d35e8b;
+    width: 80%;
+    border-radius: 20rem;
+    max-height: 10rem;
     background-image: url(/IMGs/z15-heart-line.gif);
     background-repeat: repeat-x;
     background-position-y: top;
+    background-color: #e5a3ff;
+    box-shadow: inset 0 0 11px #5a033d;
 }
-
-    h1 {
-        font-family: 'Closetome';
-        font-size: 4rem;
-        font-style: italic;
-        color:#49061B;
-        margin: 0;
-        margin-top: 2rem;
-        text-shadow: 2px 2.5px 3px var(--lightgreen);
-    }
+h1 {
+    font-family: 'Fairy';
+    font-size: 4rem;
+    margin: 0;
+    margin-top: 2rem;
+    font-weight: lighter;
+    color: #ff00627e;
+    text-shadow: 1px 2px 3px rgb(64, 0, 66);
+}
     header > p {
         font-family: 'Lora';
         font-style: italic;
@@ -64,79 +59,43 @@ main {
     flex-flow: row wrap;
     width: 54rem;
 }
-h2 {
-    font-size: 1.6rem;
-}
-
-.left-sidebar {
-    display: inline-flex;
-    flex-flow: column;
-    align-items: center;
-    margin-right: 1rem;           
-    width: 12rem;                                                                                                                        
-}
-
-.box {
-    border: 2px solid var(--dark-purple);
-    background-color: var(--color-two);
-}
-
-/* .navbox  {
-    border-image: url(/IMGs/small-lace.png);
-    border-image-slice: 8 8 9 8;
-    border-image-width: 7px 7px 7px 7px;
-    border-image-outset: 4px 4px 4px 4px;
-    border-image-repeat: round round;
-    background-color: #a9ffbf; 
-    background-clip: padding-box;
-    box-shadow: 0 0 9px rgb(255, 136, 195);                   
-} */
 
 nav {
     display: inline-block;
-    width: 12rem;
-    padding: .1rem;
-    text-align: center;
+    width: 11rem;
+    padding: .6rem;
+    text-align: left;
     overflow: none  scroll;
-    & h2 {
-        padding: .3rem;
-        margin-bottom: .2rem;
-        margin-top: .8rem;
-        margin-left: .6rem;
-        color: rgb(255, 124, 189);
-        font-size: 1.3rem;
-    }  
+    background: url('/skywal1.gif');
+} 
+nav h2 {
+    position: relative;
+    bottom: 6px;
 }
 
 .navlink {
     display: block;
     font-size: 1rem;
-    border-radius: 25px 0px 25px 0px;
-    border: 2px solid rgb(255, 171, 234);
     margin: .2rem;
-    background: rgb(182,100,157);
-    background: linear-gradient(180deg, rgba(182,100,157,1) 0%, rgba(30,6,68,1) 100%);
     font-family: 'Igiari';
     font-weight: bolder;
     font-size: 1rem;
     text-decoration: none;
     padding: .3rem;
     font-style: italic;
-    color: rgb(223, 172, 249); 
+
 }
 .navlink:hover {
     text-shadow: 0px 1px 3px rgb(249, 191, 255);
     filter: drop-shadow(1px 3px 2px #342fd4);
 }
 
-
 #info {
     padding: .6rem 2rem;
     margin: 0 .2rem;
-    max-width: 32rem;
+    overflow: scroll;
 }
 #info > ul {
-    margin-right: 3rem;
     list-style-position: outside;
     & li {margin-bottom: 1rem;}
     }
@@ -144,35 +103,31 @@ nav {
 #webmistress {
     padding: .5rem;
     margin: 0 .1rem;
-    width: 24rem;
     align-items: center;
 }
 
-/* Currently */
 #currently {
     margin: .2rem;
+    width: 18rem;
     border: 1px solid purple;
     padding: 0rem .3rem .2rem .4rem;
-    font-size: .8rem;
-    
     }
-#currently > h3:nth-child(1) {
-    border-bottom: 2px dotted rgb(70, 9, 34);
-    padding: .1rem;
-    font-family: 'Basiic';
-    }
-    #currently > p > span {
-        font-weight: bold;
-        padding: 2px;
-        margin-right: 4px;
+    #currently > h3:nth-child(1) {
+        border-bottom: 2px dotted rgb(70, 9, 34);
+        padding: .1rem;
         font-family: 'Basiic';
-        border-bottom: 2px dotted black;
-    }
+        }
+        #currently > p > span {
+            font-weight: bold;
+            padding: 2px;
+            margin-right: 4px;
+            font-family: 'Basiic';
+            border-bottom: 2px dotted black;
+        }
 
 /*=====  Neighborhood  ======*/
 #neighborhood {
     max-height: 24rem;
-    max-width: 50rem;
     display: inline-flex;
     padding: 1.8rem;
     margin: 1rem auto;
@@ -181,9 +136,7 @@ nav {
         max-height: max-content;}
     }
 
-#neighborhood div {
-    flex: 1 1;
-        }
+#neighborhood div {flex: 1 1;}
 
 #neighborhood h3 {
     display: inline-block;
@@ -192,10 +145,10 @@ nav {
 }
         
 #webrings {
-    height: 16rem;
+    height: 18rem;
     overflow: scroll;
     width: 16rem;
-    margin: auto;
+
     align-content: space-around;
 }
 
@@ -218,19 +171,19 @@ nav {
 #button img {
     margin: 1rem;
 }
-#sitely {
+#updates {
     display: inline-block;
     height: 11rem;
     overflow: scroll;
     padding: 1rem;
     font-size: .7rem;
     height: 14rem;
-    margin: 1rem;
+    margin: 0 1rem;
     & h5 {
         font-size: 1rem;
     }
 }
-#sitely p:first-of-type {
+#updates p:first-of-type {
     background-color: rgb(87, 33, 87);
     border: 2px solid rgb(116, 40, 116);
     color: rgb(242, 198, 251);
@@ -250,27 +203,12 @@ nav {
 }
 
 #piclog {
-    margin: 1rem;
+  width: 12rem;
     padding: .6rem;
-    width: 16rem;
-    height: 16rem;
     align-items: center;
     overflow: scroll;
+    & img {max-width: 160px;}
 }
-
-#piclog img {
-    max-width: 180px;
-}
-
-/* Comment */
-
-.fancy {
-
-}
-
-/*=============================================
-=                   Footer                   =
-=============================================*/
 
 footer {
     height: fit-content;
@@ -284,13 +222,7 @@ footer {
 @media (max-width: 1201px) {
     :root {font-size: 15px;}
   }
-  @media (min-width: 1024px) {  /* css code here */}
-  @media (min-width: 768px) {  /* css code here */}
-  @media (min-width: 480px) {  /* css code here */}
-  @media (min-width: 320px) {  /* css code here */}
-
-
-  
+ 
 /*=============================================
 =          ✦•┈๑⋅⋯ EXTRAS ⋯⋅๑┈•✦            =
 =============================================*/
@@ -312,8 +244,8 @@ footer {
     padding: .5rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    color: #ff2dff;
-        & a {color: #ff2dff;
+    color: #af0476;
+        & a {color: #af0476;
         text-decoration: wavy underline;}
 }
 
@@ -335,7 +267,6 @@ footer {
 }
 /*=====  ChatBox💬  ======*/
 #cbox {
-    margin: auto;
     height: 200px;
     }
 /* ===== Scrollbar CSS ===== */
@@ -361,14 +292,14 @@ border: 3px solid #ffffff;
     }
 
 /*----------  Selection Color  ----------*/
-::-moz-selection { 
-color: var(--pink);
-background: var(--lightgreen);
+::-moz-selection  { 
+color: black;
+background: pink;
 }
 
 ::selection {
-    color:  var(--pink);
-    background: var(--lightgreen);
+    color: black;
+background: pink;
     }
 
 #animalcrossingring {

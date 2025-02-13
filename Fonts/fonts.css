@@ -67,3 +67,11 @@
   font-family:"Closetome";
   src: url('/Fonts/CLOSM___.TTF');   
 }
+@font-face {
+  font-family:"Starstruck";
+  src: url('/Fonts/Starstruck.ttf');   
+}
+@font-face {
+  font-family: 'Fairy';
+  src: url('/Fonts/FairyDustB.ttf');
+}
