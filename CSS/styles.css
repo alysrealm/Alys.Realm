@@ -1,3 +1,6 @@
+/*=============================================
+ ⋆⭒˚｡⋆🪐⋆⭒˚｡⋆    UNIVERSAL STYLES   ⋆⭒˚｡⋆🪐⋆⭒˚｡⋆
+=============================================*/
 :root {
     font-size: 16px;
 }
@@ -52,13 +55,6 @@ s {text-decoration: line-through;}
  
 .smalltext {
     font-size: .6rem;
-}
-footer {
-    margin: 3em auto;
-    width: 50em;
-    height: 80px;
-    text-align: center;
-    padding: .625em;
 }
 
 
